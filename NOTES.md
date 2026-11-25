@@ -1,12 +1,7 @@
 # Working notes and time log
 
-Setup (not timed): tools installed, repo linked, `uv sync`, viewer checked, Groq key in `.env`.
+Setup : tools installed, repo linked, `uv sync`, viewer checked, Groq key in `.env`.
 
-## Time log
-
-| Session | Start | End | Hours | What |
-|---|---|---|---|---|
-| 1 | 2026-11-25 09:35 | | | B: understand the problem (profile data, pick sample, read companies) |
 
 ## Decisions
 
