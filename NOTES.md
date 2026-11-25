@@ -100,10 +100,20 @@ Setup : tools installed, repo linked, `uv sync`, viewer checked, Groq key in `.e
 
 ## AI tools used
 
-- Claude Code: data profiling script, sample selection, project scaffolding. (Keep this list updated.)
+- Claude Code: data profiling script, sample selection, project scaffolding. 
 - Claude Code drafted the summary spec and rubric (`eval/spec.md`) and section 1 of `CASE_STUDY.md`; to be reviewed and edited by me.
 - Claude Code drafted the gold set (`eval/gold.md`) from the full records; I reviewed and edited it. Limitation to state in the case study: the gold labels are not from a real vetting analyst, and an AI draft may share blind spots with the LLM being evaluated.
 
 ## What failed / surprises
 
--
+- Llama 3.3 70B (planned generator) was no longer on Groq (404); switched to openai/gpt-oss-120b, with qwen/qwen3.8-27b as the judge.
+- The free tier also has a daily token limit (200,000 tokens/day for the judge model), not only the per-minute one I planned for. The v1 and v2 judge runs used it up, so v3 was judged on 1 of 13 only.
+- A judge API call hung for 25+ minutes with no timeout. Fixed by adding a 120s request timeout and a 90s cap on rate-limit waits; SYN-001569 (v2) was skipped.
+- The judge's first run, given only the fact sheet, called correct figures from the raw record "errors" (49 for v1). It needed the raw record as ground truth (v1 fell to 10).
+- The judge is unreliable on must-not-claim calls: only 1 of 4 was correct on v2, though 4 of 5 factual errors were right.
+- My own number check started at 27% precision (11 flags, 3 real). Parser fixes ("4.42 M" without "RM", exact rounding, ranges) brought it to 50%.
+- Bug in my code: adding grouped litigation in facts.py dropped the litigation red flags, and v3's first run called SYN-001389 (3 winding-up petitions) "Proceed". The automatic hard-fail check caught it at once.
+- Surprise: the model is most error-prone when it does its own arithmetic or rewords a figure (SYN-000545 "RM 2.46m", true total RM 2.50m; SYN-000029 "operating cash flow turned negative", it was free cash flow).
+- Surprise: a rule can overcorrect. "Plaintiff cases are not a risk" led v3 to drop SYN-000267's plaintiff cases entirely.
+- Surprise: the number check can't catch a wrong direction ("turned negative") or a wrong status ("dismissed" called "pending"), since no number is wrong. Those need the judge or a human.
+- Small setup issues: load_dotenv() needed an explicit .env path, Windows console encoding failed on U+2011 hyphens, and redirected output was buffered (fixed with python -u).
