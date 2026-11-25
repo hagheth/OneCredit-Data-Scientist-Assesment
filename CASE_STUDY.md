@@ -53,15 +53,39 @@ A small Python pipeline (`src/`) that writes one summary per company, plus an ev
 version the same way. Everything runs with `uv run`. Every LLM response is cached in `runs/cache/`, so reruns are
 free and repeatable.
 
+```mermaid
+flowchart TD
+    D["<b>companies.jsonl</b> (13 sampled)"]
+
+    D --> A1["<b>v1: raw JSON</b><br/>No preprocessing"]
+    D --> B1["<b>v2: facts.py</b><br/>Fact sheet, red flags"]
+    D --> C1["<b>v3: facts.py grouped</b><br/>Litigation by status"]
+
+    A1 --> A2["<b>LLM + 1-line ask</b><br/>gpt-oss-120b"]
+    B1 --> B2["<b>LLM + v2 rules</b><br/>Verdict, template"]
+    C1 --> C2["<b>LLM + v3 rules</b><br/>Stricter, shorter"]
+
+    A2 --> A3["<b>v1_baseline.jsonl</b><br/>431 words, no verdict"]
+    B2 --> B3["<b>v2_factsheet.jsonl</b><br/>172 words, 6 errors"]
+    C2 --> C3["<b>v3_grouped.jsonl</b><br/>140 words, 4 errors"]
+
+    A3 --> E["<b>evaluate.py + judge.py + manual review</b><br/>Same checks and gold set for every version"]
+    B3 --> E
+    C3 --> E
+
+    E --> R["<b>results.md</b><br/>↻ errors found shape the next version"]
+
+    classDef base fill:#F1EFE8,stroke:#5F5E5A,color:#2C2C2A
+    classDef designed fill:#EEEDFE,stroke:#534AB7,color:#26215C
+    classDef evaluation fill:#E1F5EE,stroke:#0F6E56,color:#04342C
+    class D,A1,A2,A3 base
+    class B1,B2,B3,C1,C2,C3 designed
+    class E,R evaluation
 ```
-companies.jsonl ──> facts.py ──> fact sheet ──> prompts.py + LLM ──> summaries/<version>.jsonl
-                    (Python:      (red flags     (gpt-oss-120b)              │
-                    trends,       first, then                                ▼
-                    totals,       profile,                  evaluate.py       (automatic checks)
-                    flags)        financials,               judge.py          (LLM judge vs gold set)
-                                  ownership,                manual_review.md  (me, checking both)
-                                  litigation)
-```
+
+*Grey: shared data and the baseline. Purple: the designed versions. Green: evaluation. The three versions use the
+same model and settings and differ only in what goes into the LLM. The step from results back to a new version is
+done by hand: I read the errors and change `facts.py` or `prompts.py`.*
 
 **The key design choice: Python does the facts, the LLM does the writing.** Given 2,000 tokens of raw JSON, the LLM
 miscounted cases, mixed up plaintiff and defendant, and buried the worst risk (see v1 below). So `src/facts.py` first
