@@ -195,10 +195,14 @@ dimensions from 1 to 5.
 | Red flags in the first third | 15% | 88% | 85% |
 | Account age stated | 2/13 | 13/13 | 13/13 |
 | Mean words (within 180) | 431 (0/13) | 172 (8/13) | 140 (11/13) |
-| Factual errors | 10 (judge) | 6 (checked by hand) | 4: 2 real, 2 minor (by hand) |
-| Must-mention coverage | 88% (judge) | 87% (judge) | 82% full + 14% partly (by hand) |
+| *LLM judge:* summaries judged | 13/13 | 12/13 | — |
+| *LLM judge:* factual errors | 10 | 5 (4 real) | — |
+| *LLM judge:* must-mention coverage | 88% | 87% | — |
 
-v1's 0/13 means it never used one of the agreed verdict labels, not that its judgement was always wrong.
+v1's 0/13 means it never used one of the agreed verdict labels, not that its judgement was always wrong. The v3 judge
+cells are blank because the judge has not run on v3 yet (see below and section 4). I read all 13 v3 summaries myself
+(`eval/manual_review.md` section 4); what I found is described below, but it is not a judge score, so it is not in
+the table.
 
 **How I read this:**
 - **v2 is the big step.** The fact-sheet design fixes the verdict, the order of risks, the account age and the length.
@@ -214,9 +218,8 @@ v1's 0/13 means it never used one of the agreed verdict labels, not that its jud
 
 **What I couldn't do, and why:**
 - **No judge run on v3.** The two earlier judge runs used up the judge model's 200,000 tokens/day, a limit I hadn't
-  planned for. Instead I reviewed all 13 v3 summaries by hand with the same questions the judge answers, so the v3
-  column is a human score, not a judge score. The judge can run once the tokens reset
-  (`uv run python -u src/judge.py v3_grouped`); the one company already judged is cached.
+  planned for. Only 1 of the 13 v3 summaries was judged, so the v3 judge results are left blank. Running it is the
+  first step in section 4.
 - **One skipped v2 judgment.** The judge call for SYN-001569 kept hanging, so I skipped it.
 - **A bug in my own code.** Adding grouped litigation dropped the litigation red flags, and v3's first run called
   SYN-001389, a company facing 3 winding-up petitions, "Proceed". The hard-fail check flagged it at once. The buggy
@@ -238,20 +241,24 @@ v1's 0/13 means it never used one of the agreed verdict labels, not that its jud
 
 **Next, in order:**
 
-1. **Stop the model doing arithmetic.** This fixes both real v3 errors. Put every total the summary might need in the
+1. **Run the LLM judge on v3** once the judge model's daily tokens reset, so v3 is scored the same way as v1 and
+   v2: `uv run python -u src/judge.py v3_grouped` (about 10–15 minutes; the 1 company already judged is cached),
+   then `uv run python src/evaluate.py v1_baseline v2_factsheet v3_grouped` to add v3 to the judge table. Then compare
+   the judge's findings with my hand review of v3, as I did for v2, to measure its precision and recall again.
+2. **Stop the model doing arithmetic.** This fixes both real v3 errors. Put every total the summary might need in the
    fact sheet: open claims by case type, totals per group, the pending total in one place. Then tell the model to
    quote them and never add them up.
-2. **Make the v4 prompt fixes the v3 review found:**
+3. **Make the v4 prompt fixes the v3 review found:**
    - in ownership, give only the largest shareholder, company shareholders and 2025 changes. This cuts about 30 words
      and should bring clean companies under 120;
    - always state the cases a company brought itself, labelled "not a risk";
    - write "free cash flow" or "operating cash flow" explicitly.
-3. **Add automatic checks for the errors that slipped through:**
+4. **Add automatic checks for the errors that slipped through:**
    - compare the sign of every cash-flow or profit claim with the record (to catch "turned negative");
    - check that case types and counts match the record;
    - flag a summary that gives two different totals for the same thing.
-4. **Run the judge on v3 and v4** when tokens allow, and check its calls by hand again.
-5. **Run the best version on all 50** and read the 37 unseen summaries for new kinds of error. The sample covers
+5. **Run the judge on v4** and check its calls by hand.
+6. **Run the best version on all 50** and read the 37 unseen summaries for new kinds of error. The sample covers
    every risk type, but not every combination.
 
 **How I'd keep improving it once real analysts use it:**
