@@ -2,7 +2,7 @@
 
 **Provenance:** first draft written by an AI assistant (Claude Code) from the full records, then reviewed and edited by
 me. Each decision was made from the raw record, not from the rule-based flags in `src/explore.py`, so that evaluation
-does not just check rules against rules. *(Edit this line if you change the entries.)*
+does not just check rules against rules. 
 
 **Decision scale**
 - **Proceed:** nothing found that should stop a normal vetting process.
