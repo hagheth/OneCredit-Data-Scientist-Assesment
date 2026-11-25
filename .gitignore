@@ -6,3 +6,7 @@ __pycache__/
 .pyrefly/
 .env
 .DS_Store
+
+# local Excel copy of the data and its lock file
+companies.xlsx
+~$*.xlsx

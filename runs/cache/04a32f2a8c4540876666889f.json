@@ -1,0 +1,36 @@
+{
+  "content": "{\n  \"must_mention\": [\n    {\n      \"item\": \"no financial statements on record, so its financial health cannot be assessed\",\n      \"covered\": \"yes\",\n      \"evidence\": \"No financial statements are on record, so the company’s financial health cannot be assessed.\"\n    },\n    {\n      \"item\": \"no court cases\",\n      \"covered\": \"yes\",\n      \"evidence\": \"No court cases on record\"\n    }\n  ],\n  \"must_not_claim_violations\": [],\n  \"factual_errors\": [\n    {\n      \"quote\": \"No financial statements on record (as of 31 Dec 2025)\",\n      \"problem\": \"The fact sheet does not specify a record date of 31 Dec 2025; it only states 'No financial statements on record'. Adding a specific date not in the source is an unsupported detail.\"\n    }\n  ],\n  \"scores\": {\n    \"faithfulness\": 4,\n    \"risk_coverage\": 5,\n    \"verdict\": 5,\n    \"prioritisation\": 5,\n    \"concision_format\": 4,\n    \"gap_honesty\": 4\n  },\n  \"comment\": \"The summary is accurate and covers all required points, but it includes a specific date (31 Dec 2025) not present in the fact sheet.\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 316,
+    "prompt_tokens": 1202,
+    "total_tokens": 1518,
+    "completion_time": 0.638266041,
+    "completion_tokens_details": null,
+    "prompt_time": 0.087967426,
+    "prompt_tokens_details": null,
+    "queue_time": 0.05262498,
+    "total_time": 0.726233467
+  },
+  "model": "qwen/qwen3.8-27b",
+  "created": 1795578220,
+  "params": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a strict evaluator of company summaries written for analysts who vet suppliers and partners.\n\nYou get:\n- FACT SHEET: the ground truth, computed from the company record. Treat it as correct and complete.\n- GOLD: what an expert says the summary must say (decision, must-mention items) and must not say (must-not-claim).\n- SUMMARY: the text to evaluate.\n\nDo these steps:\n1. For each MUST MENTION item, decide if the summary conveys it: \"yes\" (clearly stated), \"partly\" (only some of it, or vague), or \"no\". Exact wording is not required; the meaning and the key numbers are.\n2. List every MUST NOT CLAIM item the summary actually says or clearly implies. Quote the summary.\n3. List every factual error: any statement that contradicts the fact sheet or is not supported by it. Check numbers, years, case statuses (pending vs settled vs dismissed vs judgment entered), roles (defendant vs plaintiff), counts, and claims of trends. Quote the summary and say what is wrong. Rounding (RM 4.01m written as RM 4.0m) is not an error. Do not list style issues here.\n4. Score each dimension from 1 to 5:\n   - faithfulness: 5 every fact correct and traceable; 3 one minor slip; 1 an invented or wrong material fact.\n   - risk_coverage: 5 every must-mention item covered; 3 most covered but one important item missing; 1 the main risk missing.\n   - verdict: 5 the summary's verdict label equals the gold decision; 3 one step off (e.g. Review closely vs Red flags); 1 two steps off or no verdict label at all.\n   - prioritisation: 5 the most serious risk comes first and risks come before background; 3 risks present but buried; 1 risk hidden behind positives.\n   - concision_format: 5 short (about 100 to 180 words), scannable, verdict then risks then the rest; 3 some padding or structure issues; 1 long (over 300 words) or unstructured.\n   - gap_honesty: 5 states the age of the accounts and every gap (missing accounts, missing years, unverified years) that applies; 3 some stated; 1 gaps ignored or filled with guesses.\n\nReturn only JSON in this shape:\n{\"must_mention\": [{\"item\": \"...\", \"covered\": \"yes|partly|no\", \"evidence\": \"short quote or 'not found'\"}],\n \"must_not_claim_violations\": [{\"item\": \"...\", \"quote\": \"...\"}],\n \"factual_errors\": [{\"quote\": \"...\", \"problem\": \"...\"}],\n \"scores\": {\"faithfulness\": 0, \"risk_coverage\": 0, \"verdict\": 0, \"prioritisation\": 0, \"concision_format\": 0, \"gap_honesty\": 0},\n \"comment\": \"one sentence\"}"
+      },
+      {
+        "role": "user",
+        "content": "FACT SHEET\nRED FLAGS (most serious first):\n- No financial statements on record, so financial health cannot be assessed.\n\nOTHER POINTS TO NOTE (not red flags on their own):\n- None.\n\nPROFILE\n- Name: Global Pacific Perunding Sdn. Bhd. (SYN-000302)\n- Status: Active\n- Business: Management consulting for SMEs | Industry: Professional Services | Registered state: Perak\n- Incorporated: 2014-01-15 (11 years before the record date) | Share capital: RM 500.0k\n\nFINANCIALS\n- No financial statements on record. Do not state any financial figures.\n\nOWNERSHIP AND CONTROL\n- Shareholder: Director 2 (individual) 58.7%\n- Shareholder: Director 3 (individual) 29.76%\n- Shareholder: Director 1 (individual) 11.54%\n- Director: Director 3, Executive Director, appointed 2018-03-25\n- Director: Director 1, Managing Director, appointed 2021-04-15\n- Director: Director 2, Director, appointed 2024-05-01\n\nLITIGATION\n- No court cases on record.\n\nGOLD\nDecision: Insufficient information\nMUST MENTION:\n- **no financial statements on record**, so its financial health cannot be assessed\n- no court cases\nMUST NOT CLAIM:\n- any financial figure, trend or ratio\n\nSUMMARY\n**Verdict: Insufficient information**: No financial statements are on record, so the company’s financial health cannot be assessed.\n\n**Key risks**\n- No financial statements on record (as of 31 Dec 2025), preventing any evaluation of revenue, profit, cash flow or debt.\n\n**Business:** Management consulting for SMEs, incorporated 2014, status Active.\n\n**Financials** (no years; latest accounts not available): No financial figures are recorded, so trends and audit opinions cannot be determined.\n\n**Ownership & control:** Director 2 holds 58.7%, Director 3 holds 29.76%, Director 1 holds 11.54%; Director appointments updated in 2024 (Director 2) and earlier.\n\n**Litigation:** No court cases on record; no winding-up petitions."
+      }
+    ],
+    "temperature": 0.0,
+    "max_tokens": 2500,
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+    rate limited, waiting 90s (attempt 1/8)
+    rate limited, waiting 90s (attempt 2/8)
+    rate limited, waiting 90s (attempt 3/8)
+    rate limited, waiting 90s (attempt 4/8)
+    rate limited, waiting 90s (attempt 5/8)
+    rate limited, waiting 35s (attempt 6/8)
+    rate limited, waiting 6s (attempt 7/8)
+[v3_grouped 1] SYN-000029  scores={'faithfulness': 3, 'risk_coverage': 4, 'verdict': 5, 'prioritisation': 4, 'concision_format': 4, 'gap_honesty': 5} errors=1
+    rate limited, waiting 90s (attempt 1/8)
+    rate limited, waiting 90s (attempt 2/8)
+    rate limited, waiting 90s (attempt 3/8)
+    rate limited, waiting 90s (attempt 4/8)
+    rate limited, waiting 90s (attempt 5/8)
+    rate limited, waiting 90s (attempt 6/8)
+    rate limited, waiting 90s (attempt 7/8)
+    rate limited, waiting 90s (attempt 8/8)
+Traceback (most recent call last):
+  File "C:\Users\Usera\Desktop\work\Assignment\OneCredit Data Scientist\src\judge.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Usera\Desktop\work\Assignment\OneCredit Data Scientist\src\judge.py", line 117, in main
+    res = judge_one(records[reg], gold[reg], summary, cache_only=cache_only)
+  File "C:\Users\Usera\Desktop\work\Assignment\OneCredit Data Scientist\src\judge.py", line 78, in judge_one
+    res = complete(JUDGE_MODEL, [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}],
+                   temperature=0.0, max_tokens=2500, extra=JUDGE_EXTRA, cache_only=cache_only)
+  File "C:\Users\Usera\Desktop\work\Assignment\OneCredit Data Scientist\src\llm.py", line 72, in complete
+    raise RuntimeError(f"Gave up after {max_attempts} attempts")
+RuntimeError: Gave up after 8 attempts

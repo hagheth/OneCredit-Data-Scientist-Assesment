@@ -1,0 +1,32 @@
+{
+  "content": "OK",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 77,
+    "total_tokens": 95,
+    "completion_time": 0.037431498,
+    "completion_tokens_details": {
+      "reasoning_tokens": 8
+    },
+    "prompt_time": 0.002980321,
+    "prompt_tokens_details": null,
+    "queue_time": 0.370321718,
+    "total_time": 0.040411819
+  },
+  "model": "openai/gpt-oss-120b",
+  "created": 1795576267,
+  "params": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with the single word OK"
+      }
+    ],
+    "temperature": 0.2,
+    "max_tokens": 200,
+    "reasoning_effort": "low",
+    "include_reasoning": false
+  }
+}

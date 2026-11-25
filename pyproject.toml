@@ -5,7 +5,11 @@ description = "Build, experiment with and evaluate a system that summarises comp
 requires-python = ">=3.14,<3.15"
 dependencies = [
   "fastapi",
+  "groq>=1.7.0",
+  "pandas>=3.1.1",
   "pydantic",
+  "python-dotenv>=1.2.4",
+  "tabulate>=0.10.0",
   "uvicorn",
 ]
 

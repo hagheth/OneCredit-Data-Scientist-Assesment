@@ -1,0 +1,36 @@
+{
+  "content": "**Verdict: Review closely**: disclaimer of FY2023 audit and FY2024 current liabilities exceeding current assets raise verification and liquidity concerns.\n\n**Key risks**\n- FY2023 audit disclaimer – figures unverified (FY2023).\n- FY2024 current liabilities RM 2.10 m exceed current assets RM 2.01 m (liquidity risk).\n\n**Business:** Private kindergarten and childcare centre in Johor Bahru, Education industry, incorporated 1991, status Active.\n\n**Financials** (FY2022‑FY2024; latest year ended 2024‑12‑31, 12 months before record date): revenue grew from RM 2.98 m to RM 5.61 m; profit after tax increased each year, but FY2023 numbers are unverified; cash balances rose, borrowings rose 88% to RM 2.65 m; current ratio fell to 0.96 in FY2024; audit opinions: unqualified FY2022 & FY2024, disclaimer FY2023.\n\n**Ownership & control:** Director 1 holds 51.02%, Director 2 holds 48.98%; both have been directors since 1995 and 2000 respectively; no shareholder changes reported in 2025.\n\n**Litigation:** No court cases on record; no winding‑up petitions.",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 336,
+    "prompt_tokens": 1423,
+    "total_tokens": 1759,
+    "completion_time": 0.697718651,
+    "completion_tokens_details": {
+      "reasoning_tokens": 46
+    },
+    "prompt_time": 0.059064887,
+    "prompt_tokens_details": null,
+    "queue_time": 0.37666179,
+    "total_time": 0.756783538
+  },
+  "model": "openai/gpt-oss-120b",
+  "created": 1795576305,
+  "params": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You write the first-read summary of a company for an analyst who vets companies before choosing them as suppliers or project partners. The analyst reads your summary to decide one thing: is this company worth a closer look, and what should they look at first? The full record is shown below your summary, so leave detail out.\n\nYou are given a FACT SHEET computed from the company's record (as of 31 Dec 2025). It is your only source.\n\nRULES\n1. Start with a verdict, using exactly one of these labels:\n   - Proceed: nothing found that should stop a normal vetting process.\n   - Review closely: gaps or weaknesses worth investigating before going ahead.\n   - Red flags: serious issues (winding-up status or petitions, going-concern or disclaimer audit opinions with other problems, negative equity, persistent and worsening losses) that may rule the company out.\n   - Insufficient information: no financial statements on record, so the company cannot be assessed. Use this whenever there are no financial statements, unless winding-up status or petitions also exist (then Red flags).\n2. Put risks first, most serious first, in the order the fact sheet lists them. Strong profits never outweigh legal or status risks: say both.\n3. Use only facts in the fact sheet. Do not guess causes, add outside knowledge, or link companies whose link is not stated. Copy numbers as written in the fact sheet (e.g. RM 4.01m, RM 355.9k). Never state a figure that is not there.\n4. For court cases, always say whether the company is the defendant (being sued) or the plaintiff (suing). Never give a bare case count. Plaintiff-only cases are not a risk.\n5. Describe trends across the years available, not one year in isolation.\n6. Say how old the latest accounts are (the year-end date and months before the record date). Do not describe the company's current health from old accounts without saying so.\n7. Say what is missing: no accounts, missing years, unverified (disclaimed) years. Never fill a gap.\n8. If there are no red flags, say \"No significant risks found in the record.\" and keep the summary short. Items under OTHER POINTS TO NOTE are context, not red flags.\n9. Refer to people only by their role name as given (e.g. Director 1).\n10. No advice beyond the verdict: do not recommend approving, rejecting or lending.\n\nFORMAT (Markdown, 100 to 180 words, never more than 220; shorter when the company is clean):\n\n**Verdict: <label>**: <one sentence: the main reason>\n\n**Key risks**\n- <one bullet per risk, most serious first, with year, amount and status where relevant>\n\n**Business:** <what it does>, incorporated <year>, status <status>.\n\n**Financials** (<years>; latest year ended <date>, <N> months before the record date): <1 to 3 short sentences on revenue and profit trend, cash flow or debt, and audit opinions>\n\n**Ownership & control:** <largest shareholder and %, any company shareholder, director or name changes in 2025>\n\n**Litigation:** <cases by role; pending claims against the company; winding-up petitions>\n\nOutput only the summary."
+      },
+      {
+        "role": "user",
+        "content": "FACT SHEET\n\nRED FLAGS (most serious first):\n- FY2023 audit: disclaimer of opinion, so FY2023 figures are unverified.\n- FY2024: current liabilities (RM 2.10m) exceed current assets (RM 2.01m).\n\nOTHER POINTS TO NOTE (not red flags on their own):\n- Borrowings up 88% (RM 1.41m to RM 2.65m).\n\nPROFILE\n- Name: Teguh Bestari Learning Sdn. Bhd. (SYN-000217)\n- Status: Active\n- Business: Tadika swasta dan taska di Johor Bahru | Industry: Education | Registered state: Selangor\n- Incorporated: 1991-12-07 (34 years before the record date) | Share capital: RM 2.50m\n\nFINANCIALS\n- Years available: FY2022, FY2023, FY2024. Latest year ended 2024-12-31, 12 months before the record date (31 Dec 2025).\n- FY2022 (ended 2022-12-31; audit: Unqualified): revenue RM 2.98m, profit after tax RM 138.4k (net margin 4.7%), operating cash flow RM 249.7k, free cash flow RM 168.8k, cash RM 377.1k, borrowings RM 1.41m, total equity RM 1.31m, current ratio 1.25, debt service coverage 1.91, interest cover 3.35\n- FY2023 (ended 2023-12-31; audit: Disclaimer of opinion): revenue RM 4.10m, profit after tax RM 225.9k (net margin 5.5%), operating cash flow RM 392.5k, free cash flow RM 304.5k, cash RM 579.3k, borrowings RM 1.94m, total equity RM 1.47m, current ratio 1.05, debt service coverage 1.27, interest cover 3.78\n- FY2024 (ended 2024-12-31; audit: Unqualified): revenue RM 5.61m, profit after tax RM 386.4k (net margin 6.9%), operating cash flow RM 523.7k, free cash flow RM 357.8k, cash RM 709.0k, borrowings RM 2.65m, total equity RM 1.74m, current ratio 0.96, debt service coverage 1.51, interest cover 4.48\n- Revenue FY2022 to FY2024: RM 2.98m to RM 5.61m (+88.4%).\n\nOWNERSHIP AND CONTROL\n- Shareholder: Director 1 (individual) 51.02%\n- Shareholder: Director 2 (individual) 48.98%\n- Director: Director 1, Managing Director, appointed 1995-05-25\n- Director: Director 2, Director, appointed 2000-04-21\n\nLITIGATION\n- No court cases on record."
+      }
+    ],
+    "temperature": 0.2,
+    "max_tokens": 2000,
+    "reasoning_effort": "low",
+    "include_reasoning": false
+  }
+}

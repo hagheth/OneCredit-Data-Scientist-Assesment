@@ -1,0 +1,369 @@
+[
+  {
+    "registrationNumber": "SYN-000029",
+    "words": 144,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Proceed",
+    "gold_decision": "Proceed",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [],
+    "flags_mentioned": {},
+    "flags_in_first_third": {},
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-000067",
+    "words": 156,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Red flags",
+    "gold_decision": "Red flags",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "losses",
+      "cash_flow",
+      "liquidity",
+      "debt_service",
+      "revenue_decline"
+    ],
+    "flags_mentioned": {
+      "losses": true,
+      "cash_flow": true,
+      "liquidity": true,
+      "debt_service": true,
+      "revenue_decline": true
+    },
+    "flags_in_first_third": {
+      "losses": true,
+      "cash_flow": true,
+      "liquidity": true,
+      "debt_service": false,
+      "revenue_decline": false
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [
+      "8%"
+    ],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-000217",
+    "words": 133,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Review closely",
+    "gold_decision": "Review closely",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "audit_disclaimer",
+      "liquidity"
+    ],
+    "flags_mentioned": {
+      "audit_disclaimer": true,
+      "liquidity": true
+    },
+    "flags_in_first_third": {
+      "audit_disclaimer": true,
+      "liquidity": true
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-000267",
+    "words": 127,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Proceed",
+    "gold_decision": "Proceed",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [],
+    "flags_mentioned": {},
+    "flags_in_first_third": {},
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-000282",
+    "words": 113,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Proceed",
+    "gold_decision": "Proceed",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [],
+    "flags_mentioned": {},
+    "flags_in_first_third": {},
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-000286",
+    "words": 151,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Red flags",
+    "gold_decision": "Red flags",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "winding_up_petition",
+      "judgment_against",
+      "pending_defendant",
+      "missing_year"
+    ],
+    "flags_mentioned": {
+      "winding_up_petition": true,
+      "judgment_against": true,
+      "pending_defendant": true,
+      "missing_year": true
+    },
+    "flags_in_first_third": {
+      "winding_up_petition": true,
+      "judgment_against": true,
+      "pending_defendant": true,
+      "missing_year": true
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-000302",
+    "words": 60,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Insufficient information",
+    "gold_decision": "Insufficient information",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "no_financials"
+    ],
+    "flags_mentioned": {
+      "no_financials": true
+    },
+    "flags_in_first_third": {
+      "no_financials": true
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-000451",
+    "words": 177,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Red flags",
+    "gold_decision": "Red flags",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "negative_equity",
+      "losses",
+      "cash_flow",
+      "liquidity",
+      "debt_service",
+      "revenue_decline"
+    ],
+    "flags_mentioned": {
+      "negative_equity": true,
+      "losses": true,
+      "cash_flow": true,
+      "liquidity": true,
+      "debt_service": false,
+      "revenue_decline": true
+    },
+    "flags_in_first_third": {
+      "negative_equity": true,
+      "losses": true,
+      "cash_flow": true,
+      "liquidity": true,
+      "debt_service": false,
+      "revenue_decline": false
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-000545",
+    "words": 169,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Red flags",
+    "gold_decision": "Red flags",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "winding_up_status",
+      "winding_up_petition",
+      "going_concern",
+      "pending_defendant"
+    ],
+    "flags_mentioned": {
+      "winding_up_status": true,
+      "winding_up_petition": false,
+      "going_concern": true,
+      "pending_defendant": true
+    },
+    "flags_in_first_third": {
+      "winding_up_status": true,
+      "winding_up_petition": false,
+      "going_concern": true,
+      "pending_defendant": false
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [
+      "RM 2.46 m"
+    ],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-001203",
+    "words": 84,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Insufficient information",
+    "gold_decision": "Insufficient information",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "no_financials"
+    ],
+    "flags_mentioned": {
+      "no_financials": true
+    },
+    "flags_in_first_third": {
+      "no_financials": true
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-001212",
+    "words": 170,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Red flags",
+    "gold_decision": "Red flags",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "winding_up_status",
+      "winding_up_petition",
+      "judgment_against",
+      "pending_defendant",
+      "debt_service",
+      "revenue_decline"
+    ],
+    "flags_mentioned": {
+      "winding_up_status": true,
+      "winding_up_petition": false,
+      "judgment_against": true,
+      "pending_defendant": true,
+      "debt_service": true,
+      "revenue_decline": true
+    },
+    "flags_in_first_third": {
+      "winding_up_status": true,
+      "winding_up_petition": false,
+      "judgment_against": false,
+      "pending_defendant": false,
+      "debt_service": true,
+      "revenue_decline": true
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-001389",
+    "words": 143,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Proceed",
+    "gold_decision": "Red flags",
+    "verdict_correct": false,
+    "verdict_steps_off": 2,
+    "red_flags": [
+      "winding_up_petition",
+      "pending_defendant"
+    ],
+    "flags_mentioned": {
+      "winding_up_petition": false,
+      "pending_defendant": true
+    },
+    "flags_in_first_third": {
+      "winding_up_petition": false,
+      "pending_defendant": false
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  },
+  {
+    "registrationNumber": "SYN-001569",
+    "words": 135,
+    "within_target": true,
+    "within_hard_limit": true,
+    "verdict": "Review closely",
+    "gold_decision": "Review closely",
+    "verdict_correct": true,
+    "verdict_steps_off": 0,
+    "red_flags": [
+      "audit_disclaimer",
+      "debt_service"
+    ],
+    "flags_mentioned": {
+      "audit_disclaimer": true,
+      "debt_service": true
+    },
+    "flags_in_first_third": {
+      "audit_disclaimer": true,
+      "debt_service": true
+    },
+    "account_age_stated": true,
+    "role_stated": true,
+    "sections_present": true,
+    "unsupported_numbers": [],
+    "wrong_case_counts": []
+  }
+]

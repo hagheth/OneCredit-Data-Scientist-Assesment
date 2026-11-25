@@ -1,0 +1,36 @@
+{
+  "content": "**Verdict: Insufficient information**: No financial statements are on record, so the company’s financial health cannot be assessed.\n\n**Key risks**\n- No financial statements on record (latest accounts missing), preventing any assessment of revenue, profit, cash flow or debt.\n\n**Business:** Cold chain transport and storage of frozen goods, incorporated 2007, status Active.\n\n**Financials** (no years; latest accounts not filed, N/A months before the record date): No financial figures are available; audit opinions cannot be determined.\n\n**Ownership & control:** 70.0% owned by Gemilang Holdings Sdn. Bhd.; Director 2 holds 19.45% and Director 1 holds 10.55%; directors appointed 2010‑12‑12 and 2018‑06‑21 respectively; no shareholder changes reported in 2025.\n\n**Litigation:** 1 case where the company is plaintiff (breach of contract, settled, claim RM 22.5k); no pending claims against the company; no winding‑up petitions.",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 254,
+    "prompt_tokens": 1088,
+    "total_tokens": 1342,
+    "completion_time": 0.522741991,
+    "completion_tokens_details": {
+      "reasoning_tokens": 28
+    },
+    "prompt_time": 0.045158641,
+    "prompt_tokens_details": null,
+    "queue_time": 0.279486989,
+    "total_time": 0.567900632
+  },
+  "model": "openai/gpt-oss-120b",
+  "created": 1795576376,
+  "params": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You write the first-read summary of a company for an analyst who vets companies before choosing them as suppliers or project partners. The analyst reads your summary to decide one thing: is this company worth a closer look, and what should they look at first? The full record is shown below your summary, so leave detail out.\n\nYou are given a FACT SHEET computed from the company's record (as of 31 Dec 2025). It is your only source.\n\nRULES\n1. Start with a verdict, using exactly one of these labels:\n   - Proceed: nothing found that should stop a normal vetting process.\n   - Review closely: gaps or weaknesses worth investigating before going ahead.\n   - Red flags: serious issues (winding-up status or petitions, going-concern or disclaimer audit opinions with other problems, negative equity, persistent and worsening losses) that may rule the company out.\n   - Insufficient information: no financial statements on record, so the company cannot be assessed. Use this whenever there are no financial statements, unless winding-up status or petitions also exist (then Red flags).\n2. Put risks first, most serious first, in the order the fact sheet lists them. Strong profits never outweigh legal or status risks: say both.\n3. Use only facts in the fact sheet. Do not guess causes, add outside knowledge, or link companies whose link is not stated. Copy numbers as written in the fact sheet (e.g. RM 4.01m, RM 355.9k). Never state a figure that is not there.\n4. For court cases, always say whether the company is the defendant (being sued) or the plaintiff (suing). Never give a bare case count. Plaintiff-only cases are not a risk.\n5. Describe trends across the years available, not one year in isolation.\n6. Say how old the latest accounts are (the year-end date and months before the record date). Do not describe the company's current health from old accounts without saying so.\n7. Say what is missing: no accounts, missing years, unverified (disclaimed) years. Never fill a gap.\n8. If there are no red flags, say \"No significant risks found in the record.\" and keep the summary short. Items under OTHER POINTS TO NOTE are context, not red flags.\n9. Refer to people only by their role name as given (e.g. Director 1).\n10. No advice beyond the verdict: do not recommend approving, rejecting or lending.\n\nFORMAT (Markdown, 100 to 180 words, never more than 220; shorter when the company is clean):\n\n**Verdict: <label>**: <one sentence: the main reason>\n\n**Key risks**\n- <one bullet per risk, most serious first, with year, amount and status where relevant>\n\n**Business:** <what it does>, incorporated <year>, status <status>.\n\n**Financials** (<years>; latest year ended <date>, <N> months before the record date): <1 to 3 short sentences on revenue and profit trend, cash flow or debt, and audit opinions>\n\n**Ownership & control:** <largest shareholder and %, any company shareholder, director or name changes in 2025>\n\n**Litigation:** <cases by role; pending claims against the company; winding-up petitions>\n\nOutput only the summary."
+      },
+      {
+        "role": "user",
+        "content": "FACT SHEET\n\nRED FLAGS (most serious first):\n- No financial statements on record, so financial health cannot be assessed.\n\nOTHER POINTS TO NOTE (not red flags on their own):\n- 70.0% owned by a company, Gemilang Holdings Sdn. Bhd. (Malaysia); the parent's standing matters.\n\nPROFILE\n- Name: Pacific Seri Freight Sdn. Bhd. (SYN-001203)\n- Status: Active\n- Business: Cold chain transport and storage of frozen goods | Industry: Logistics | Registered state: Selangor\n- Incorporated: 2007-06-08 (18 years before the record date) | Share capital: RM 5.00m\n\nFINANCIALS\n- No financial statements on record. Do not state any financial figures.\n\nOWNERSHIP AND CONTROL\n- Shareholder: Gemilang Holdings Sdn. Bhd. (company, registered SYN-008766, incorporated in Malaysia) 70.0%\n- Shareholder: Director 2 (individual) 19.45%\n- Shareholder: Director 1 (individual) 10.55%\n- Director: Director 1, Managing Director, appointed 2010-12-12\n- Director: Director 2, Director, appointed 2018-06-21\n\nLITIGATION\n- 1 cases: 0 with the company as defendant (being sued), 1 as plaintiff (the company is suing).\n- 2023-09-24: Breach of contract, company is plaintiff, Magistrates' Court (Selangor), status Settled, claim RM 22.5k"
+      }
+    ],
+    "temperature": 0.2,
+    "max_tokens": 2000,
+    "reasoning_effort": "low",
+    "include_reasoning": false
+  }
+}

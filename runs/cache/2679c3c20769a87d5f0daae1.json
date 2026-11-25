@@ -1,0 +1,36 @@
+{
+  "content": "{\n  \"must_mention\": [\n    {\n      \"item\": \"no financial statements on record\",\n      \"covered\": \"yes\",\n      \"evidence\": \"No financial statements are on record\"\n    },\n    {\n      \"item\": \"70% owned by a company, Gemilang Holdings Sdn. Bhd. (Malaysia), so the parent's standing matters\",\n      \"covered\": \"partly\",\n      \"evidence\": \"70.0% owned by Gemilang Holdings Sdn. Bhd.\"\n    }\n  ],\n  \"must_not_claim_violations\": [\n    {\n      \"item\": \"anything about the parent beyond its name, country and stake\",\n      \"quote\": \"70.0% owned by Gemilang Holdings Sdn. Bhd.\"\n    }\n  ],\n  \"factual_errors\": [\n    {\n      \"quote\": \"no shareholder changes reported in 2025\",\n      \"problem\": \"The fact sheet does not contain information about shareholder changes in 2025; this is an unsupported claim.\"\n    }\n  ],\n  \"scores\": {\n    \"faithfulness\": 4,\n    \"risk_coverage\": 4,\n    \"verdict\": 5,\n    \"prioritisation\": 5,\n    \"concision_format\": 4,\n    \"gap_honesty\": 4\n  },\n  \"comment\": \"The summary correctly identifies the lack of financials and ownership structure but includes an unsupported claim about 2025 shareholder changes and omits the specific implication that the parent's standing matters.\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 363,
+    "prompt_tokens": 1377,
+    "total_tokens": 1740,
+    "completion_time": 0.725034216,
+    "completion_tokens_details": null,
+    "prompt_time": 0.094481628,
+    "prompt_tokens_details": null,
+    "queue_time": 0.051733498,
+    "total_time": 0.819515844
+  },
+  "model": "qwen/qwen3.8-27b",
+  "created": 1795578256,
+  "params": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a strict evaluator of company summaries written for analysts who vet suppliers and partners.\n\nYou get:\n- FACT SHEET: the ground truth, computed from the company record. Treat it as correct and complete.\n- GOLD: what an expert says the summary must say (decision, must-mention items) and must not say (must-not-claim).\n- SUMMARY: the text to evaluate.\n\nDo these steps:\n1. For each MUST MENTION item, decide if the summary conveys it: \"yes\" (clearly stated), \"partly\" (only some of it, or vague), or \"no\". Exact wording is not required; the meaning and the key numbers are.\n2. List every MUST NOT CLAIM item the summary actually says or clearly implies. Quote the summary.\n3. List every factual error: any statement that contradicts the fact sheet or is not supported by it. Check numbers, years, case statuses (pending vs settled vs dismissed vs judgment entered), roles (defendant vs plaintiff), counts, and claims of trends. Quote the summary and say what is wrong. Rounding (RM 4.01m written as RM 4.0m) is not an error. Do not list style issues here.\n4. Score each dimension from 1 to 5:\n   - faithfulness: 5 every fact correct and traceable; 3 one minor slip; 1 an invented or wrong material fact.\n   - risk_coverage: 5 every must-mention item covered; 3 most covered but one important item missing; 1 the main risk missing.\n   - verdict: 5 the summary's verdict label equals the gold decision; 3 one step off (e.g. Review closely vs Red flags); 1 two steps off or no verdict label at all.\n   - prioritisation: 5 the most serious risk comes first and risks come before background; 3 risks present but buried; 1 risk hidden behind positives.\n   - concision_format: 5 short (about 100 to 180 words), scannable, verdict then risks then the rest; 3 some padding or structure issues; 1 long (over 300 words) or unstructured.\n   - gap_honesty: 5 states the age of the accounts and every gap (missing accounts, missing years, unverified years) that applies; 3 some stated; 1 gaps ignored or filled with guesses.\n\nReturn only JSON in this shape:\n{\"must_mention\": [{\"item\": \"...\", \"covered\": \"yes|partly|no\", \"evidence\": \"short quote or 'not found'\"}],\n \"must_not_claim_violations\": [{\"item\": \"...\", \"quote\": \"...\"}],\n \"factual_errors\": [{\"quote\": \"...\", \"problem\": \"...\"}],\n \"scores\": {\"faithfulness\": 0, \"risk_coverage\": 0, \"verdict\": 0, \"prioritisation\": 0, \"concision_format\": 0, \"gap_honesty\": 0},\n \"comment\": \"one sentence\"}"
+      },
+      {
+        "role": "user",
+        "content": "FACT SHEET\nRED FLAGS (most serious first):\n- No financial statements on record, so financial health cannot be assessed.\n\nOTHER POINTS TO NOTE (not red flags on their own):\n- 70.0% owned by a company, Gemilang Holdings Sdn. Bhd. (Malaysia); the parent's standing matters.\n\nPROFILE\n- Name: Pacific Seri Freight Sdn. Bhd. (SYN-001203)\n- Status: Active\n- Business: Cold chain transport and storage of frozen goods | Industry: Logistics | Registered state: Selangor\n- Incorporated: 2007-06-08 (18 years before the record date) | Share capital: RM 5.00m\n\nFINANCIALS\n- No financial statements on record. Do not state any financial figures.\n\nOWNERSHIP AND CONTROL\n- Shareholder: Gemilang Holdings Sdn. Bhd. (company, registered SYN-008766, incorporated in Malaysia) 70.0%\n- Shareholder: Director 2 (individual) 19.45%\n- Shareholder: Director 1 (individual) 10.55%\n- Director: Director 1, Managing Director, appointed 2010-12-12\n- Director: Director 2, Director, appointed 2018-06-21\n\nLITIGATION\n- 1 cases: 0 with the company as defendant (being sued), 1 as plaintiff (the company is suing).\n- 2023-09-24: Breach of contract, company is plaintiff, Magistrates' Court (Selangor), status Settled, claim RM 22.5k\n\nGOLD\nDecision: Insufficient information\nMUST MENTION:\n- **no financial statements on record**\n- **70% owned by a company**, Gemilang Holdings Sdn. Bhd. (Malaysia), so the parent's standing matters\nMUST NOT CLAIM:\n- any financial figure\n- anything about the parent beyond its name, country and stake\n\nSUMMARY\n**Verdict: Insufficient information**: No financial statements are on record, so the company’s financial health cannot be assessed.\n\n**Key risks**\n- No financial statements on record (latest accounts missing), preventing any assessment of revenue, profit, cash flow or debt.\n\n**Business:** Cold chain transport and storage of frozen goods, incorporated 2007, status Active.\n\n**Financials** (no years; latest accounts not filed, N/A months before the record date): No financial figures are available; audit opinions cannot be determined.\n\n**Ownership & control:** 70.0% owned by Gemilang Holdings Sdn. Bhd.; Director 2 holds 19.45% and Director 1 holds 10.55%; directors appointed 2010-12-12 and 2018-06-21 respectively; no shareholder changes reported in 2025.\n\n**Litigation:** 1 case where the company is plaintiff (breach of contract, settled, claim RM 22.5k); no pending claims against the company; no winding-up petitions."
+      }
+    ],
+    "temperature": 0.0,
+    "max_tokens": 2500,
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

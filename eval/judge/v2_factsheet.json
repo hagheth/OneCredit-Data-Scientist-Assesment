@@ -1,0 +1,622 @@
+[
+  {
+    "registrationNumber": "SYN-000029",
+    "must_mention": [
+      {
+        "item": "profitable all 3 years but very thin net margin (about 2%, PAT about RM 0.10m on RM 5.35m revenue)",
+        "covered": "partly",
+        "evidence": "Profit after tax remains low but positive, falling slightly from RM 113.9 k to RM 96.8 k."
+      },
+      {
+        "item": "revenue growing slowly (RM 5.13m to RM 5.35m)",
+        "covered": "yes",
+        "evidence": "Revenue has risen modestly from RM 5.13 m to RM 5.35 m (+4.3%)."
+      },
+      {
+        "item": "free cash flow negative in all 3 years",
+        "covered": "yes",
+        "evidence": "negative free cash flow each year"
+      },
+      {
+        "item": "no court cases",
+        "covered": "yes",
+        "evidence": "No court cases on record"
+      },
+      {
+        "item": "clean audits",
+        "covered": "yes",
+        "evidence": "audit opinions are unqualified for all years"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [],
+    "scores": {
+      "faithfulness": 5,
+      "risk_coverage": 4,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 5,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is accurate, well-structured, and covers all key points, though it could be slightly more explicit about the thinness of the net margin.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 428,
+      "prompt_tokens": 4714,
+      "total_tokens": 5142,
+      "completion_time": 0.841910854,
+      "completion_tokens_details": null,
+      "prompt_time": 0.345668328,
+      "prompt_tokens_details": null,
+      "queue_time": 0.05176221,
+      "total_time": 1.187579182
+    }
+  },
+  {
+    "registrationNumber": "SYN-000067",
+    "must_mention": [
+      {
+        "item": "losses in all 3 years and getting worse (PAT -RM 4.24m, -RM 6.12m, -RM 7.52m)",
+        "covered": "yes",
+        "evidence": "FY2024: profit after tax -RM 7.52 m... FY2023: profit after tax -RM 6.12 m... FY2022: profit after tax -RM 4.24 m... losses deepened each year"
+      },
+      {
+        "item": "revenue falling (RM 49.5m to RM 43.3m)",
+        "covered": "yes",
+        "evidence": "Revenue fell 12 % from RM 49.47 m to RM 43.29 m"
+      },
+      {
+        "item": "negative operating cash flow every year",
+        "covered": "yes",
+        "evidence": "operating cash flow negative every year"
+      },
+      {
+        "item": "equity down from RM 31.2m to RM 17.6m",
+        "covered": "yes",
+        "evidence": "equity declined sharply to RM 17.58 m"
+      },
+      {
+        "item": "current liabilities exceed current assets in FY2024",
+        "covered": "yes",
+        "evidence": "current ratio 0.81 (current liabilities RM 21.96 m > current assets RM 17.73 m)"
+      },
+      {
+        "item": "interest not covered by operating profit",
+        "covered": "partly",
+        "evidence": "debt service coverage -2.70 (earnings do not cover debt payments)"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [],
+    "scores": {
+      "faithfulness": 5,
+      "risk_coverage": 5,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 3,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is factually accurate, covers all key risks, and correctly identifies the red flags, though it is slightly verbose for the target word count.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 564,
+      "prompt_tokens": 4962,
+      "total_tokens": 5526,
+      "completion_time": 1.073591821,
+      "completion_tokens_details": null,
+      "prompt_time": 0.342243272,
+      "prompt_tokens_details": null,
+      "queue_time": 0.051323926,
+      "total_time": 1.415835093
+    }
+  },
+  {
+    "registrationNumber": "SYN-000217",
+    "must_mention": [
+      {
+        "item": "FY2023 audit opinion was a disclaimer of opinion, so the FY2023 figures cannot be relied on",
+        "covered": "yes",
+        "evidence": "FY2023 audit disclaimer - figures unverified (FY2023)."
+      },
+      {
+        "item": "FY2022 and FY2024 unqualified",
+        "covered": "yes",
+        "evidence": "audit opinions: unqualified FY2022 & FY2024"
+      },
+      {
+        "item": "revenue growing fast (RM 2.98m to RM 5.61m) with profits rising (PAT RM 0.39m in FY2024)",
+        "covered": "partly",
+        "evidence": "revenue grew from RM 2.98 m to RM 5.61 m; profit after tax increased each year... (PAT RM 0.39m not explicitly stated)"
+      },
+      {
+        "item": "leverage rising (liabilities to equity about 1.6 to 2.6)",
+        "covered": "no",
+        "evidence": "not found"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [
+      {
+        "quote": "no shareholder changes reported in 2025",
+        "problem": "The record does not contain data for 2025 or any information regarding shareholder changes in that year; this is an unsupported claim."
+      }
+    ],
+    "scores": {
+      "faithfulness": 4,
+      "risk_coverage": 3,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 4,
+      "gap_honesty": 4
+    },
+    "comment": "The summary correctly identifies the main audit and liquidity risks but fails to mention the rising leverage trend and includes an unsupported claim about 2025 shareholder changes.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 489,
+      "prompt_tokens": 4503,
+      "total_tokens": 4992,
+      "completion_time": 1.089785266,
+      "completion_tokens_details": null,
+      "prompt_time": 0.341720767,
+      "prompt_tokens_details": null,
+      "queue_time": 0.048336392,
+      "total_time": 1.431506033
+    }
+  },
+  {
+    "registrationNumber": "SYN-000267",
+    "must_mention": [
+      {
+        "item": "changed its name in June 2025 (formerly Sinar Industries Sdn. Bhd.)",
+        "covered": "no",
+        "evidence": "not found"
+      },
+      {
+        "item": "5 court cases, all as plaintiff (the company is suing, not being sued), 1 still pending (RM 177k)",
+        "covered": "yes",
+        "evidence": "5 plaintiff cases (company suing); no defendant cases. Pending claim: breach of contract RM 177.0k"
+      },
+      {
+        "item": "profitable all 3 years (PAT RM 0.47m on RM 19.4m revenue)",
+        "covered": "yes",
+        "evidence": "profit after tax remained modest (RM 473.2 k in FY2024)"
+      },
+      {
+        "item": "clean audits",
+        "covered": "yes",
+        "evidence": "All three years audited with unqualified opinions"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [],
+    "scores": {
+      "faithfulness": 5,
+      "risk_coverage": 3,
+      "verdict": 5,
+      "prioritisation": 3,
+      "concision_format": 3,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is factually accurate and correctly identifies the litigation posture, but it omits the mandatory mention of the 2025 name change and buries the key risks behind a 'no red flags' verdict.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 402,
+      "prompt_tokens": 5365,
+      "total_tokens": 5767,
+      "completion_time": 0.88048633,
+      "completion_tokens_details": null,
+      "prompt_time": 0.421389973,
+      "prompt_tokens_details": null,
+      "queue_time": 0.048805953,
+      "total_time": 1.301876303
+    }
+  },
+  {
+    "registrationNumber": "SYN-000282",
+    "must_mention": [
+      {
+        "item": "steady growth (revenue RM 25.1m to RM 27.6m) and profitable all 3 years (PAT RM 1.87m in FY2024)",
+        "covered": "partly",
+        "evidence": "Revenue grew 9.8% to RM 27.55 m and profit after tax remained healthy (RM 1.87 m in FY2024)."
+      },
+      {
+        "item": "strong cash generation (positive free cash flow every year)",
+        "covered": "no",
+        "evidence": "not found"
+      },
+      {
+        "item": "comfortable interest cover (about 8x)",
+        "covered": "yes",
+        "evidence": "interest cover >7"
+      },
+      {
+        "item": "no court cases",
+        "covered": "yes",
+        "evidence": "No court cases on record"
+      },
+      {
+        "item": "clean audits",
+        "covered": "yes",
+        "evidence": "all audit opinions are unqualified"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [],
+    "scores": {
+      "faithfulness": 5,
+      "risk_coverage": 3,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 5,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is factually accurate and correctly identifies the 'Proceed' verdict, but it fails to explicitly mention the positive free cash flow, which is a key must-mention item.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 412,
+      "prompt_tokens": 4408,
+      "total_tokens": 4820,
+      "completion_time": 0.838665617,
+      "completion_tokens_details": null,
+      "prompt_time": 0.313966808,
+      "prompt_tokens_details": null,
+      "queue_time": 0.050796771,
+      "total_time": 1.152632425
+    }
+  },
+  {
+    "registrationNumber": "SYN-000286",
+    "must_mention": [
+      {
+        "item": "a winding-up petition against it has been pending since Sept 2022 (RM 355.9k)",
+        "covered": "yes",
+        "evidence": "2022-09-15: Winding-up petition filed, pending, claim RM 355.9k."
+      },
+      {
+        "item": "6 cases, all as defendant, including a debt-recovery judgment against it (RM 97.6k, 2024) and a pending tenancy dispute (RM 110.6k)",
+        "covered": "yes",
+        "evidence": "Litigation: 6 defendant cases; ... Judgment entered for debt recovery, claim RM 97.6k ... Pending tenancy claim, RM 110.6k"
+      },
+      {
+        "item": "FY2023 accounts are missing (only FY2022 and FY2024)",
+        "covered": "yes",
+        "evidence": "FY2023 accounts are missing."
+      }
+    ],
+    "must_not_claim_violations": [
+      {
+        "item": "that it has 3 years of accounts",
+        "quote": "Financials (FY2022, FY2024; latest year ended 31 Dec 2024, 12 months before the record date)"
+      },
+      {
+        "item": "that the winding-up petition is resolved",
+        "quote": "2022-09-15: Winding-up petition filed, pending, claim RM 355.9k."
+      }
+    ],
+    "factual_errors": [
+      {
+        "quote": "pending debt recovery judgment (RM 97.6 k)",
+        "problem": "The debt recovery case status is 'Judgment entered', not 'pending'. The summary correctly lists it as 'Judgment entered' in the Key risks section but incorrectly labels it as 'pending' in the Litigation section."
+      }
+    ],
+    "scores": {
+      "faithfulness": 4,
+      "risk_coverage": 5,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 4,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is accurate and covers all key risks, but contains a minor factual error in the litigation section by labeling the debt recovery judgment as 'pending'.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 594,
+      "prompt_tokens": 4532,
+      "total_tokens": 5126,
+      "completion_time": 1.238366406,
+      "completion_tokens_details": null,
+      "prompt_time": 0.313701338,
+      "prompt_tokens_details": null,
+      "queue_time": 0.073131261,
+      "total_time": 1.552067744
+    }
+  },
+  {
+    "registrationNumber": "SYN-000302",
+    "must_mention": [
+      {
+        "item": "no financial statements on record, so its financial health cannot be assessed",
+        "covered": "yes",
+        "evidence": "No financial statements are on record, so the company’s financial health cannot be assessed."
+      },
+      {
+        "item": "no court cases",
+        "covered": "yes",
+        "evidence": "No court cases on record"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [],
+    "scores": {
+      "faithfulness": 5,
+      "risk_coverage": 5,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 5,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is accurate, concise, and correctly identifies the lack of financial data as the primary reason for the 'Insufficient information' verdict.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 234,
+      "prompt_tokens": 1587,
+      "total_tokens": 1821,
+      "completion_time": 0.445383979,
+      "completion_tokens_details": null,
+      "prompt_time": 0.112713664,
+      "prompt_tokens_details": null,
+      "queue_time": 0.054983391,
+      "total_time": 0.558097643
+    }
+  },
+  {
+    "registrationNumber": "SYN-000451",
+    "must_mention": [
+      {
+        "item": "negative equity in FY2024 (liabilities exceed assets)",
+        "covered": "yes",
+        "evidence": "FY2024: Negative equity of -RM 18.5k (liabilities exceed assets)."
+      },
+      {
+        "item": "losses in all 3 years and growing (PAT -RM 0.18m to -RM 0.28m)",
+        "covered": "yes",
+        "evidence": "FY2022-FY2024: Losses every year, profit after tax worsening from -RM 180.4k to -RM 275.6k."
+      },
+      {
+        "item": "revenue falling (RM 2.32m to RM 2.08m)",
+        "covered": "yes",
+        "evidence": "FY2022-FY2024: Revenue fell 10% (RM 2.32 m to RM 2.08 m)."
+      },
+      {
+        "item": "negative operating cash flow every year",
+        "covered": "yes",
+        "evidence": "FY2022-FY2024: Operating cash flow negative each year"
+      },
+      {
+        "item": "name changed in Nov 2025 (formerly Gemilang Ventures Sdn. Bhd.)",
+        "covered": "yes",
+        "evidence": "name changed from Gemilang Ventures Sdn. Bhd. on 2025-11-27."
+      }
+    ],
+    "must_not_claim_violations": [
+      {
+        "item": "that the litigation is a risk",
+        "quote": "1 pending case where the company is defendant (debt recovery, claim RM 106.9 k, dismissed)"
+      }
+    ],
+    "factual_errors": [
+      {
+        "quote": "1 pending case where the company is defendant (debt recovery, claim RM 106.9 k, dismissed)",
+        "problem": "The case status is 'Dismissed', not 'pending'. The summary contradicts itself by labeling it pending while also stating it was dismissed."
+      }
+    ],
+    "scores": {
+      "faithfulness": 4,
+      "risk_coverage": 5,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 3,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is comprehensive and correctly identifies all major financial risks and the name change, but it contains a factual error regarding the litigation status (calling a dismissed case 'pending') and slightly exceeds the ideal word count.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 652,
+      "prompt_tokens": 5414,
+      "total_tokens": 6066,
+      "completion_time": 1.283884101,
+      "completion_tokens_details": null,
+      "prompt_time": 0.386983449,
+      "prompt_tokens_details": null,
+      "queue_time": 0.055277008,
+      "total_time": 1.67086755
+    }
+  },
+  {
+    "registrationNumber": "SYN-000545",
+    "must_mention": [
+      {
+        "item": "status is Winding up",
+        "covered": "yes",
+        "evidence": "Company is in winding-up status"
+      },
+      {
+        "item": "a winding-up petition ended in judgment against it (2023)",
+        "covered": "yes",
+        "evidence": "2023-10-13 winding-up petition - judgment entered"
+      },
+      {
+        "item": "4 pending claims as defendant totalling about RM 2.5m",
+        "covered": "yes",
+        "evidence": "Four other pending claims totalling RM 2.50 m"
+      },
+      {
+        "item": "FY2022 audit had material uncertainty on going concern",
+        "covered": "yes",
+        "evidence": "FY2022 audit notes material uncertainty on going concern"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [],
+    "scores": {
+      "faithfulness": 5,
+      "risk_coverage": 5,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 3,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is factually accurate, covers all required risk items, and correctly labels the verdict as 'Red flags', though it is slightly long and includes some background details that could be trimmed.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 357,
+      "prompt_tokens": 5780,
+      "total_tokens": 6137,
+      "completion_time": 0.761417279,
+      "completion_tokens_details": null,
+      "prompt_time": 0.439262012,
+      "prompt_tokens_details": null,
+      "queue_time": 0.051803384,
+      "total_time": 1.200679291
+    }
+  },
+  {
+    "registrationNumber": "SYN-001203",
+    "must_mention": [
+      {
+        "item": "no financial statements on record",
+        "covered": "yes",
+        "evidence": "No financial statements are on record, so the company’s financial health cannot be assessed."
+      },
+      {
+        "item": "70% owned by a company, Gemilang Holdings Sdn. Bhd. (Malaysia), so the parent's standing matters",
+        "covered": "partly",
+        "evidence": "70.0% owned by Gemilang Holdings Sdn. Bhd.; ... (does not mention Malaysia or that parent's standing matters)"
+      }
+    ],
+    "must_not_claim_violations": [
+      {
+        "item": "anything about the parent beyond its name, country and stake",
+        "quote": "70.0% owned by Gemilang Holdings Sdn. Bhd."
+      }
+    ],
+    "factual_errors": [
+      {
+        "quote": "no shareholder changes reported in 2025",
+        "problem": "The record contains no data on shareholder changes; this is an unsupported claim."
+      },
+      {
+        "quote": "no winding-up petitions",
+        "problem": "The record does not contain information about winding-up petitions; this is an unsupported claim."
+      }
+    ],
+    "scores": {
+      "faithfulness": 3,
+      "risk_coverage": 4,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 4,
+      "gap_honesty": 4
+    },
+    "comment": "The summary correctly identifies the lack of financials as the primary issue but includes unsupported claims about shareholder changes and winding-up petitions, and fails to fully contextualize the parent company ownership.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 416,
+      "prompt_tokens": 1850,
+      "total_tokens": 2266,
+      "completion_time": 0.78843996,
+      "completion_tokens_details": null,
+      "prompt_time": 0.13250918,
+      "prompt_tokens_details": null,
+      "queue_time": 0.617704693,
+      "total_time": 0.92094914
+    }
+  },
+  {
+    "registrationNumber": "SYN-001212",
+    "must_mention": [
+      {
+        "item": "status is Winding up",
+        "covered": "yes",
+        "evidence": "Company status “Winding up” (current)."
+      },
+      {
+        "item": "2 winding-up petitions ended in judgment against it (2021, RM 9.47m; 2022, RM 300.8k)",
+        "covered": "yes",
+        "evidence": "Two winding-up petitions entered: 2022-07-08 (RM 300.8k) and 2021-03-28 (RM 9.47m)."
+      },
+      {
+        "item": "2 employment claims still pending (about RM 479k in total)",
+        "covered": "partly",
+        "evidence": "Two other pending claims against the company, total RM 479.3k (including employment claim RM 404.4k pending 2025-03-24)."
+      },
+      {
+        "item": "revenue and profit falling steadily (revenue RM 6.97m to RM 4.51m; PAT RM 0.41m to RM 0.04m)",
+        "covered": "yes",
+        "evidence": "Revenue fell from RM 6.97 m to RM 4.51 m; profit after tax dropped from RM 405.1 k to RM 38.6 k"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [],
+    "scores": {
+      "faithfulness": 5,
+      "risk_coverage": 4,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 3,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is factually accurate and covers the main risks, but it is somewhat long and only partially specifies that both pending claims are employment-related.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 492,
+      "prompt_tokens": 5948,
+      "total_tokens": 6440,
+      "completion_time": 0.970024965,
+      "completion_tokens_details": null,
+      "prompt_time": 0.450997097,
+      "prompt_tokens_details": null,
+      "queue_time": 0.051267949,
+      "total_time": 1.421022062
+    }
+  },
+  {
+    "registrationNumber": "SYN-001389",
+    "must_mention": [
+      {
+        "item": "3 winding-up petitions against it since 2023: 1 settled (2023), 1 still pending (filed Feb 2024), 1 filed Nov 2025 and withdrawn",
+        "covered": "yes",
+        "evidence": "2025-11-19 winding-up petition... withdrawn... 2024-02-19 winding-up petition... pending... 2023-07-02 winding-up petition... settled"
+      },
+      {
+        "item": "2 pending tenancy claims (RM 681.6k in total)",
+        "covered": "yes",
+        "evidence": "Other pending claims against the company total RM 681.6k (including tenancy disputes in 2025-09-25 and 2025-01-29)"
+      },
+      {
+        "item": "all 8 cases as defendant",
+        "covered": "yes",
+        "evidence": "Litigation: 8 cases, all as defendant"
+      }
+    ],
+    "must_not_claim_violations": [],
+    "factual_errors": [],
+    "scores": {
+      "faithfulness": 5,
+      "risk_coverage": 5,
+      "verdict": 5,
+      "prioritisation": 5,
+      "concision_format": 3,
+      "gap_honesty": 5
+    },
+    "comment": "The summary is factually accurate, covers all required risk items, and correctly labels the verdict as Red flags, though it is slightly verbose for the ideal length.",
+    "cached": true,
+    "usage": {
+      "completion_tokens": 397,
+      "prompt_tokens": 6061,
+      "total_tokens": 6458,
+      "completion_time": 0.799227486,
+      "completion_tokens_details": null,
+      "prompt_time": 0.454530695,
+      "prompt_tokens_details": null,
+      "queue_time": 0.503962856,
+      "total_time": 1.253758181
+    }
+  },
+  {
+    "registrationNumber": "SYN-001569",
+    "skipped": "not judged (API call kept hanging; skipped)",
+    "cached": false,
+    "usage": null
+  }
+]

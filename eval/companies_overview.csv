@@ -1,0 +1,51 @@
+registrationNumber,companyName,industry,status,ageYears,formerNames,nYears,latestFY,latestFYEnd,badAuditOpinion,auditOpinions,latestRevenue,revenueGrowthFirstToLatest,latestProfitAfterTax,lossYears,latestEquity,negativeEquity,latestOperatingCashFlow,nCases,nDefendant,nPendingDefendant,pendingDefendantClaimRM,windingUpPetitions,nDirectors,directorsAppointed2025,nShareholders,topShareholderPct,corporateShareholders
+SYN-000029,Unity Global Trading Sdn. Bhd.,Retail,Active,7.5,0,3,2024,2024-06-30,False,Unqualified,5352856.0,0.04341507068727868,96805.0,0,4447731.0,False,113617.0,0,0,0,0.0,0,5,2,4,58.25,0
+SYN-000067,Jaya Prima Travel Sdn. Bhd.,Hospitality,Active,30.8,0,3,2024,2024-12-31,False,Unqualified,43292441.0,-0.1248341998987541,-7515861.0,3,17578376.0,False,-5939447.0,0,0,0,0.0,0,4,1,3,47.38,0
+SYN-000148,Indah Prima Medical Sdn. Bhd.,Healthcare,Active,32.7,0,3,2024,2024-09-30,False,Unqualified,4835417.0,-0.12547113779143626,-1080511.0,3,1879684.0,False,-818980.0,0,0,0,0.0,0,5,0,4,75.61,0
+SYN-000165,Teguh Kirana Freight Sdn. Bhd.,Logistics,Active,33.3,0,3,2024,2024-03-31,False,Unqualified,21522626.0,0.9792594867795712,913861.0,0,8281131.0,False,1528498.0,1,0,0,0.0,0,5,0,2,98.34,0
+SYN-000217,Teguh Bestari Learning Sdn. Bhd.,Education,Active,34.1,0,3,2024,2024-12-31,True,Disclaimer of opinion; Unqualified,5606840.0,0.8839858980958666,386389.0,0,1739735.0,False,523695.0,0,0,0,0.0,0,2,0,2,51.02,0
+SYN-000267,Global Everbright Store Sdn. Bhd.,Retail,Active,35.2,1,3,2024,2024-06-30,False,Unqualified,19374478.0,0.09455770118498452,473200.0,0,12321741.0,False,965505.0,5,0,0,0.0,0,3,0,2,89.67,0
+SYN-000282,Delima Pacific Academy Sdn. Bhd.,Education,Active,34.6,0,3,2024,2024-03-31,False,Unqualified,27546638.0,0.09767459838337222,1865751.0,0,9515594.0,False,3786808.0,0,0,0,0.0,0,2,0,2,57.42,0
+SYN-000286,Cahaya Seri Catering Sdn. Bhd.,Food & Beverage,Active,8.1,0,2,2024,2024-12-31,False,Unqualified,4419464.0,0.0508971755496479,178923.0,0,1945146.0,False,220184.0,6,6,2,466500.0,1,3,0,2,98.86,0
+SYN-000302,Global Pacific Perunding Sdn. Bhd.,Professional Services,Active,12.0,0,0,,,False,,,,,0,,False,,0,0,0,0.0,0,3,0,3,58.7,0
+SYN-000333,Gemilang Harmoni Enterprise Sdn. Bhd.,Retail,Active,28.2,1,0,,,False,,,,,0,,False,,0,0,0,0.0,0,3,0,3,45.57,0
+SYN-000381,Cahaya Harmoni Hotel Sdn. Bhd.,Hospitality,Active,30.2,0,3,2024,2024-12-31,False,Unqualified,16436671.0,0.8287837204393842,975406.0,0,6905119.0,False,1197487.0,0,0,0,0.0,0,2,0,3,51.0,1
+SYN-000397,Pacific Pacific Education Sdn. Bhd.,Education,Active,19.6,0,2,2024,2024-12-31,False,Unqualified,6863227.0,0.06387041640553903,371117.0,0,2370368.0,False,574147.0,6,6,2,778700.0,0,4,0,4,49.67,0
+SYN-000451,Mutiara Delima Bakery Sdn. Bhd.,Food & Beverage,Active,30.3,1,3,2024,2024-06-30,False,Unqualified,2083984.0,-0.10356717619771916,-275562.0,3,-18522.0,True,-138894.0,2,1,0,0.0,0,5,0,4,50.59,0
+SYN-000476,Kirana Everbright Packaging Sdn. Bhd.,Manufacturing,Active,20.1,0,3,2024,2024-12-31,False,Unqualified,24205023.0,-0.35595655407575744,268633.0,0,11656377.0,False,1431040.0,0,0,0,0.0,0,4,0,1,100.0,1
+SYN-000510,Seri Jaya Store Sdn. Bhd.,Retail,Active,19.1,0,3,2024,2024-12-31,False,Unqualified,4369846.0,-0.33781302696484017,35641.0,0,5536010.0,False,166918.0,0,0,0,0.0,0,4,1,2,96.87,0
+SYN-000511,Sinar Everbright Trading Sdn. Bhd.,Retail,Active,18.0,0,3,2024,2024-12-31,False,Unqualified,1115956.0,-0.3314562248312699,3710.0,0,1274584.0,False,16385.0,0,0,0,0.0,0,5,0,4,72.7,0
+SYN-000545,Cahaya Golden Systems Sdn. Bhd.,Technology,Winding up,6.3,0,3,2024,2024-03-31,True,Unqualified; Unqualified with material uncertainty on going concern,13006124.0,0.0507617465293726,1278980.0,0,9634633.0,False,1326836.0,8,8,4,2502400.0,2,3,2,3,52.17,0
+SYN-000546,Gemilang Mega Systems Sdn. Bhd.,Technology,Active,31.0,0,3,2024,2024-03-31,False,Unqualified,266012466.0,0.29678779267031397,16807864.0,2,116734631.0,False,23986394.0,0,0,0,0.0,0,2,0,2,55.65,0
+SYN-000640,Teguh Bestari Medical Sdn. Bhd.,Healthcare,Active,37.2,0,3,2024,2024-12-31,False,Unqualified,1160005.0,0.08235167880419314,90125.0,0,614048.0,False,168772.0,6,1,0,0.0,0,2,0,2,63.91,0
+SYN-000657,Mega Mutiara Catering Sdn. Bhd.,Food & Beverage,Active,35.1,0,3,2024,2024-12-31,False,Unqualified,32080974.0,-0.10925126373222549,-4470415.0,3,20046169.0,False,-4455929.0,0,0,0,0.0,0,4,0,3,54.63,0
+SYN-000674,Indah Bestari Hotel Sdn. Bhd.,Hospitality,Active,7.5,0,3,2024,2024-03-31,False,Unqualified,38796380.0,0.08293592901195068,2486546.0,0,32955231.0,False,4413850.0,2,0,0,0.0,0,3,0,3,66.06,0
+SYN-000677,Mega Murni Klinik Sdn. Bhd.,Healthcare,Active,29.1,0,3,2024,2024-09-30,False,Unqualified,16938873.0,0.863242845644919,1632511.0,0,5999985.0,False,2333215.0,5,0,0,0.0,0,5,0,4,37.75,0
+SYN-000783,Seri Everbright Klinik Sdn. Bhd.,Healthcare,Active,30.1,0,3,2024,2024-12-31,False,Unqualified,57991924.0,0.32030932416407154,3850478.0,2,39510504.0,False,6121061.0,1,0,0,0.0,0,2,0,1,100.0,0
+SYN-000785,Sejahtera Cahaya Technologies Sdn. Bhd.,Technology,Active,31.7,0,3,2024,2024-12-31,False,Unqualified,13376691.0,-0.13517338276693114,-2692538.0,3,396674.0,False,-1760880.0,0,0,0,0.0,0,5,0,1,100.0,1
+SYN-000802,Sinar Gemilang Associates Sdn. Bhd.,Professional Services,Active,2.0,0,1,2024,2024-06-30,False,Unqualified,27799367.0,,-2575829.0,1,30508762.0,False,-1727574.0,0,0,0,0.0,0,5,3,3,72.94,0
+SYN-000923,Everbright Mega Kopi Sdn. Bhd.,Food & Beverage,Active,11.4,0,3,2024,2024-06-30,False,Unqualified,31626551.0,-0.3877090176620007,164641.0,0,11959019.0,False,917889.0,0,0,0,0.0,0,4,0,3,67.36,0
+SYN-001070,Jaya Mega Consulting Sdn. Bhd.,Professional Services,Active,7.7,0,3,2024,2024-06-30,False,Unqualified,33648817.0,0.13053695741011717,3597121.0,0,28881892.0,False,4182287.0,2,1,0,0.0,0,4,1,3,61.11,0
+SYN-001085,Global Murni Plastik Sdn. Bhd.,Manufacturing,Active,8.3,0,3,2024,2024-09-30,False,Unqualified,24762011.0,0.06901244611930557,1176507.0,0,18523479.0,False,2991477.0,0,0,0,0.0,0,5,2,4,42.83,0
+SYN-001102,Seri Maju Digital Sdn. Bhd.,Technology,Active,22.8,0,3,2024,2024-12-31,False,Unqualified,56636796.0,0.9532901350370959,6750598.0,0,18714749.0,False,7537380.0,0,0,0,0.0,0,3,0,3,44.2,0
+SYN-001158,Bestari Kirana Ladang Sdn. Bhd.,Agriculture,Active,2.4,0,1,2024,2024-06-30,False,Unqualified,62464139.0,,-4128397.0,1,45948581.0,False,-1055947.0,0,0,0,0.0,0,4,2,3,52.86,0
+SYN-001199,Harmoni Murni Catering Sdn. Bhd.,Food & Beverage,Active,21.2,1,3,2024,2024-03-31,False,Unqualified,12287997.0,0.33276120466544623,491443.0,2,2265988.0,False,599176.0,0,0,0,0.0,0,3,0,2,89.6,0
+SYN-001203,Pacific Seri Freight Sdn. Bhd.,Logistics,Active,18.6,0,0,,,False,,,,,0,,False,,1,0,0,0.0,0,2,0,3,70.0,1
+SYN-001212,Sinar Sinar Pelancongan Sdn. Bhd.,Hospitality,Winding up,28.0,0,3,2024,2024-09-30,False,Unqualified,4512871.0,-0.35288244407213054,38566.0,0,7906892.0,False,109310.0,8,7,2,479300.0,2,3,0,3,56.47,0
+SYN-001253,Everbright Teguh Hotel Sdn. Bhd.,Hospitality,Active,36.4,0,2,2024,2024-12-31,False,Unqualified,6520818.0,0.0471518953801664,268761.0,0,2481753.0,False,602464.0,0,0,0,0.0,0,5,1,2,90.66,0
+SYN-001294,Maju Jaya Management Sdn. Bhd.,Professional Services,Active,2.2,0,1,2024,2024-09-30,False,Unqualified,10153873.0,,-843149.0,1,5198085.0,False,-164558.0,0,0,0,0.0,0,5,2,4,63.59,0
+SYN-001298,Mutiara Delima Agro Sdn. Bhd.,Agriculture,Active,2.7,1,1,2024,2024-12-31,False,Unqualified,74303529.0,,-3658575.0,1,66068376.0,False,-1575359.0,0,0,0,0.0,0,4,1,3,58.92,0
+SYN-001355,Teguh Cahaya Medical Sdn. Bhd.,Healthcare,Active,34.7,0,3,2024,2024-12-31,False,Unqualified,26191548.0,-0.3454901212083652,517279.0,0,19867775.0,False,2674993.0,0,0,0,0.0,0,2,0,1,100.0,0
+SYN-001389,Everbright Prima Homestay Sdn. Bhd.,Hospitality,Active,12.1,0,3,2024,2024-09-30,False,Unqualified,59059072.0,0.9149497345356787,4008508.0,0,18634176.0,False,7644603.0,8,8,3,731700.0,3,5,1,3,87.78,0
+SYN-001455,Sejahtera Kirana Engineering Sdn. Bhd.,Construction,Active,24.7,0,3,2024,2024-12-31,False,Unqualified,8195177.0,0.10249304684290217,217029.0,0,4262411.0,False,528360.0,0,0,0,0.0,0,2,0,2,60.0,1
+SYN-001457,Maju Murni Consulting Sdn. Bhd.,Professional Services,Active,21.3,0,3,2024,2024-12-31,False,Unqualified,25651015.0,0.2690013058075662,2221843.0,2,17998992.0,False,2590637.0,0,0,0,0.0,0,5,0,1,100.0,1
+SYN-001472,Everbright Murni Plastik Sdn. Bhd.,Manufacturing,Active,29.1,0,3,2024,2024-12-31,False,Unqualified,11475475.0,0.8700065964909536,578277.0,0,3304931.0,False,1305502.0,0,0,0,0.0,0,2,1,2,94.06,0
+SYN-001529,Jaya Unity Precision Sdn. Bhd.,Manufacturing,Active,37.8,0,3,2024,2024-09-30,False,Unqualified,16145308.0,0.3579562395700311,745161.0,2,3634461.0,False,1894791.0,0,0,0,0.0,0,5,0,3,75.67,0
+SYN-001560,Prima Global Builders Sdn. Bhd.,Construction,Active,2.2,0,1,2024,2024-12-31,False,Unqualified,4156184.0,,-199449.0,1,1570812.0,False,-30647.0,0,0,0,0.0,0,4,2,4,49.22,0
+SYN-001569,Unity Maju Makanan Sdn. Bhd.,Food & Beverage,Active,8.3,0,3,2024,2024-06-30,True,Disclaimer of opinion; Unqualified,6263314.0,0.05197571053928396,195075.0,0,3896348.0,False,632801.0,0,0,0,0.0,0,5,0,4,38.0,0
+SYN-001618,Sejahtera Kirana Resort Sdn. Bhd.,Hospitality,Active,13.7,0,3,2024,2024-03-31,False,Unqualified,8185760.0,-0.1359613993740234,-1262512.0,3,3814816.0,False,-1048216.0,0,0,0,0.0,0,2,0,1,100.0,1
+SYN-001645,Unity Cahaya Bina Sdn. Bhd.,Construction,Active,23.6,0,3,2024,2024-09-30,False,Unqualified,21288282.0,0.09735782437775331,930777.0,0,12434965.0,False,1706146.0,0,0,0,0.0,0,3,0,3,74.26,0
+SYN-001829,Murni Bestari Tech Sdn. Bhd.,Technology,Active,10.5,0,3,2024,2024-03-31,False,Unqualified,15810227.0,0.08547621409732553,1497176.0,0,11392085.0,False,2391807.0,2,1,1,126600.0,0,2,0,2,84.31,0
+SYN-001894,Kirana Mutiara Farm Sdn. Bhd.,Agriculture,Active,15.5,0,3,2024,2024-12-31,False,Unqualified,7278405.0,0.10934148288663925,278301.0,0,2728874.0,False,427631.0,3,0,0,0.0,0,2,0,3,70.0,1
+SYN-001969,Mutiara Seri Runcit Sdn. Bhd.,Retail,Active,20.1,0,3,2024,2024-12-31,False,Unqualified,33000675.0,0.09194960735784274,904720.0,0,18686144.0,False,2370377.0,1,1,0,0.0,0,3,0,3,63.4,0
+SYN-001970,Teguh Sinar Food Sdn. Bhd.,Food & Beverage,Active,11.2,0,2,2024,2024-12-31,False,Unqualified,20207092.0,0.11848683098039992,944841.0,0,18514515.0,False,2089111.0,5,0,0,0.0,0,3,0,2,62.56,0

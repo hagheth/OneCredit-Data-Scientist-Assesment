@@ -1,0 +1,44 @@
+{
+  "registrationNumber": "SYN-000302",
+  "version": "v1_baseline",
+  "description": "Raw JSON record + one-line instruction",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write a short summary of this company for a team that vets companies before choosing them as suppliers or project partners. They will read it first to decide whether the company is worth a closer look. Use Markdown.\n\nCompany record (JSON):\n{\"registrationNumber\": \"SYN-000302\", \"profile\": {\"companyName\": \"Global Pacific Perunding Sdn. Bhd.\", \"status\": \"Active\", \"companyType\": \"Private limited company\", \"incorporationDate\": \"2014-01-15\", \"industry\": \"Professional Services\", \"state\": \"Perak\", \"natureOfBusiness\": \"Management consulting for SMEs\", \"shareCapital\": 500000, \"formerNames\": []}, \"relationships\": {\"directors\": [{\"name\": \"Director 1\", \"designation\": \"Managing Director\", \"appointedOn\": \"2021-04-15\"}, {\"name\": \"Director 2\", \"designation\": \"Director\", \"appointedOn\": \"2024-05-01\"}, {\"name\": \"Director 3\", \"designation\": \"Executive Director\", \"appointedOn\": \"2018-03-25\"}], \"shareholders\": [{\"type\": \"individual\", \"name\": \"Director 1\", \"percentage\": 11.54}, {\"type\": \"individual\", \"name\": \"Director 3\", \"percentage\": 29.76}, {\"type\": \"individual\", \"name\": \"Director 2\", \"percentage\": 58.7}]}, \"financials\": {\"years\": []}, \"litigation\": {\"cases\": []}}"
+    }
+  ],
+  "response": {
+    "content": "## Company Snapshot – Global Pacific Perunding Sdn. Bhd.\n\n| **Item** | **Details** |\n|----------|--------------|\n| **Registration No.** | SYN‑000302 |\n| **Incorporation Date** | 15 Jan 2014 |\n| **Legal Form** | Private limited company (Active) |\n| **Location** | Perak, Malaysia |\n| **Industry / Business Focus** | Professional Services – Management consulting for SMEs |\n| **Share Capital** | RM 500,000 |\n| **Key Personnel** | • **Director 1** – Managing Director (appointed 15 Apr 2021)  <br>• **Director 2** – Director (appointed 1 May 2024)  <br>• **Director 3** – Executive Director (appointed 25 Mar 2018) |\n| **Ownership Structure** | All three directors are also the shareholders: <br>– Director 2: 58.7 %  <br>– Director 3: 29.76 %  <br>– Director 1: 11.54 % |\n| **Financial History** | No financial statements submitted in the record (no “years” data). |\n| **Litigation** | No recorded court cases or disputes. |\n| **Former Names** | None reported. |\n\n### Quick Assessment\n\n- **Core Capability:** Provides management‑consulting services targeted at small‑ and medium‑sized enterprises. This aligns with projects that need strategic, operational, or growth advisory for SMEs.\n- **Stability Indicators:**  \n  - Over a decade in operation (since 2014).  \n  - Fully owned and controlled by three senior directors, suggesting clear decision‑making lines.  \n  - No litigation history found, which is a positive risk signal.\n- **Red Flags / Gaps:**  \n  - No financial data available in the supplied record, making it difficult to gauge profitability, cash flow, or creditworthiness.  \n  - Share capital is modest (RM 500k); assess whether this is sufficient for the scale of work you anticipate.  \n  - Limited public footprint (no mention of major clients, certifications, or industry affiliations).\n\n### Recommendation\n\n- **Proceed to deeper due‑diligence** if the consulting scope matches their SME focus and you can obtain: <br>• Audited financial statements (last 3 years). <br>• References or case studies from past SME clients. <br>• Confirmation of any professional certifications (e.g., ISO, industry‑specific accreditations). <br>• Insight into staffing capacity beyond the three directors.  \n\nIf financial transparency or capacity concerns cannot be resolved, consider alternative suppliers with a more robust financial track record.",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 582,
+      "prompt_tokens": 391,
+      "total_tokens": 973,
+      "completion_time": 1.212807098,
+      "completion_tokens_details": {
+        "reasoning_tokens": 4
+      },
+      "prompt_time": 0.061751341,
+      "prompt_tokens_details": null,
+      "queue_time": 0.296022126,
+      "total_time": 1.274558439
+    },
+    "model": "openai/gpt-oss-120b",
+    "created": 1795576565,
+    "params": {
+      "model": "openai/gpt-oss-120b",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Write a short summary of this company for a team that vets companies before choosing them as suppliers or project partners. They will read it first to decide whether the company is worth a closer look. Use Markdown.\n\nCompany record (JSON):\n{\"registrationNumber\": \"SYN-000302\", \"profile\": {\"companyName\": \"Global Pacific Perunding Sdn. Bhd.\", \"status\": \"Active\", \"companyType\": \"Private limited company\", \"incorporationDate\": \"2014-01-15\", \"industry\": \"Professional Services\", \"state\": \"Perak\", \"natureOfBusiness\": \"Management consulting for SMEs\", \"shareCapital\": 500000, \"formerNames\": []}, \"relationships\": {\"directors\": [{\"name\": \"Director 1\", \"designation\": \"Managing Director\", \"appointedOn\": \"2021-04-15\"}, {\"name\": \"Director 2\", \"designation\": \"Director\", \"appointedOn\": \"2024-05-01\"}, {\"name\": \"Director 3\", \"designation\": \"Executive Director\", \"appointedOn\": \"2018-03-25\"}], \"shareholders\": [{\"type\": \"individual\", \"name\": \"Director 1\", \"percentage\": 11.54}, {\"type\": \"individual\", \"name\": \"Director 3\", \"percentage\": 29.76}, {\"type\": \"individual\", \"name\": \"Director 2\", \"percentage\": 58.7}]}, \"financials\": {\"years\": []}, \"litigation\": {\"cases\": []}}"
+        }
+      ],
+      "temperature": 0.2,
+      "max_tokens": 2000,
+      "reasoning_effort": "low",
+      "include_reasoning": false
+    },
+    "cached": false
+  }
+}

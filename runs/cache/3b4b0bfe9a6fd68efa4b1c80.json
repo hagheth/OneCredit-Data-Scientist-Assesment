@@ -1,0 +1,36 @@
+{
+  "content": "**Verdict: Proceed**: No red‑flag issues appear in the record.\n\n**Key risks**\n- No significant risks found in the record.\n\n**Business:** Professional training courses in accounting and finance, incorporated 1991, status Active.\n\n**Financials** (FY2022‑FY2024; latest year ended 2024‑03‑31, 21 months before the record date): Revenue grew 9.8% to RM 27.55m and profit after tax remained solid (net margin 6.8% in FY2024). All three years have unqualified audits, cash flow is positive, and leverage is moderate with current ratio 1.80 and interest cover 7.92.\n\n**Ownership & control:** Director 1 holds 57.42%; Director 2 holds 42.58%; Director 2 is Executive Director (appointed 1993‑06‑03); Director 1 is Managing Director (appointed 2012‑06‑24).\n\n**Litigation:** No court cases on record.",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 296,
+    "prompt_tokens": 1521,
+    "total_tokens": 1817,
+    "completion_time": 0.616759664,
+    "completion_tokens_details": {
+      "reasoning_tokens": 76
+    },
+    "prompt_time": 0.071255535,
+    "prompt_tokens_details": null,
+    "queue_time": 0.368177333,
+    "total_time": 0.688015199
+  },
+  "model": "openai/gpt-oss-120b",
+  "created": 1795582668,
+  "params": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You write the first-read summary of a company for an analyst who vets companies before choosing them as suppliers or project partners. The analyst reads your summary to decide one thing: is this company worth a closer look, and what should they look at first? The full record is shown below your summary, so leave detail out.\n\nYou are given a FACT SHEET computed from the company's record (as of 31 Dec 2025). It is your only source.\n\nRULES\n1. Start with a verdict, using exactly one of these labels:\n   - Proceed: nothing found that should stop a normal vetting process.\n   - Review closely: gaps or weaknesses worth investigating before going ahead.\n   - Red flags: serious issues (winding-up status or petitions, going-concern or disclaimer audit opinions with other problems, negative equity, persistent and worsening losses) that may rule the company out.\n   - Insufficient information: no financial statements on record, so the company cannot be assessed. Use this whenever there are no financial statements, unless winding-up status or petitions also exist (then Red flags).\n2. \"Key risks\" lists ONLY items from the RED FLAGS section of the fact sheet, most serious first, at most 4 bullets (merge related items into one bullet). If RED FLAGS says \"None found.\", write exactly one bullet: \"No significant risks found in the record.\" Strong profits never outweigh legal or status risks: say both.\n3. Use only facts in the fact sheet. Copy numbers as written (e.g. RM 4.01m, RM 355.9k). Never state a figure that is not there.\n3b. Do not make claims about things the fact sheet does not cover: for example, shareholder holdings have no dates, so never say whether shareholders changed. Do not guess causes or outcomes. Only say \"all\", \"every\", \"never\", \"above\" or \"below\" when every figure in the fact sheet supports it.\n4. Litigation: the fact sheet groups cases as OPEN against the company, DECIDED against the company, CLOSED against the company (Settled, Withdrawn, Dismissed) and BROUGHT BY the company. Keep each case in its group and use the group's word: only OPEN cases are \"pending\"; DECIDED cases are \"judgment entered against the company\"; CLOSED cases are settled, withdrawn or dismissed. Cases BROUGHT BY the company are not a risk.\n5. Describe trends across the years available, not one year in isolation. If the net margin is under 3%, say so.\n6. Say how old the latest accounts are (the year-end date and months before the record date). Do not describe the company's current health from old accounts without saying so.\n7. Say what is missing: no accounts, missing years, unverified (disclaimed) years. Never fill a gap.\n8. Every item under OTHER POINTS TO NOTE must appear in \"Ownership & control\" (they are context, not red flags).\n9. Refer to people only by their role name as given (e.g. Director 1).\n10. No advice beyond the verdict: do not recommend approving, rejecting or lending.\n\nFORMAT (Markdown, at most 180 words; a company with no red flags should be under 120):\n\n**Verdict: <label>**: <one sentence: the main reason>\n\n**Key risks**\n- <bullets from RED FLAGS only, most serious first, at most 4>\n\n**Business:** <what it does>, incorporated <year>, status <status>.\n\n**Financials** (<years>; latest year ended <date>, <N> months before the record date): <at most 2 sentences: revenue and profit trend, cash flow or debt, audit opinions>\nIf there are no financial statements, write instead: **Financials:** No financial statements on record.\n\n**Ownership & control:** <largest shareholder and %, any company shareholder, every OTHER POINTS TO NOTE item>\n\n**Litigation:** <one sentence: counts by group; open and decided cases against the company with amounts; or \"No court cases on record.\">\n\nOutput only the summary."
+      },
+      {
+        "role": "user",
+        "content": "FACT SHEET\n\nRED FLAGS (most serious first):\n- None found.\n\nOTHER POINTS TO NOTE (not red flags on their own):\n- None.\n\nPROFILE\n- Name: Delima Pacific Academy Sdn. Bhd. (SYN-000282)\n- Status: Active\n- Business: Professional training courses in accounting and finance | Industry: Education | Registered state: Kuala Lumpur\n- Incorporated: 1991-06-05 (34 years before the record date) | Share capital: RM 250.0k\n\nFINANCIALS\n- Years available: FY2022, FY2023, FY2024. Latest year ended 2024-03-31, 21 months before the record date (31 Dec 2025).\n- FY2022 (ended 2022-03-31; audit: Unqualified): revenue RM 25.10m, profit after tax RM 1.39m (net margin 5.5%), operating cash flow RM 3.19m, free cash flow RM 2.23m, cash RM 1.75m, borrowings RM 5.87m, total equity RM 6.79m, current ratio 1.64, debt service coverage 3.24, interest cover 6.67\n- FY2023 (ended 2023-03-31; audit: Unqualified): revenue RM 26.62m, profit after tax RM 2.03m (net margin 7.6%), operating cash flow RM 3.39m, free cash flow RM 1.86m, cash RM 782.9k, borrowings RM 6.23m, total equity RM 8.21m, current ratio 1.51, debt service coverage 3.28, interest cover 8.78\n- FY2024 (ended 2024-03-31; audit: Unqualified): revenue RM 27.55m, profit after tax RM 1.87m (net margin 6.8%), operating cash flow RM 3.79m, free cash flow RM 2.03m, cash RM 1.44m, borrowings RM 6.45m, total equity RM 9.52m, current ratio 1.80, debt service coverage 3.32, interest cover 7.92\n- Revenue FY2022 to FY2024: RM 25.10m to RM 27.55m (+9.8%).\n\nOWNERSHIP AND CONTROL\n- Shareholder: Director 1 (individual) 57.42%\n- Shareholder: Director 2 (individual) 42.58%\n- Director: Director 2, Executive Director, appointed 1993-06-03\n- Director: Director 1, Managing Director, appointed 2012-06-24\n\nLITIGATION\n- No court cases on record."
+      }
+    ],
+    "temperature": 0.2,
+    "max_tokens": 2000,
+    "reasoning_effort": "low",
+    "include_reasoning": false
+  }
+}

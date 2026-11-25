@@ -1,0 +1,38 @@
+{
+  "content": "**Verdict: Insufficient information**: No financial statements are on record, preventing assessment of financial health.\n\n**Key risks**\n- No financial statements on record, so financial health cannot be assessed.\n\n**Business:** Cold chain transport and storage of frozen goods, incorporated 2007, status Active.\n\n**Financials:** No financial statements on record.\n\n**Ownership & control:** 70.0% owned by Gemilang Holdings Sdn. Bhd.; Director 2 holds 19.45%; Director 1 holds 10.55%.\n\n**Litigation:** No pending or judgment cases against the company; 1 case brought by the company settled for RM 22.5k.",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 301,
+    "prompt_tokens": 1335,
+    "total_tokens": 1636,
+    "completion_time": 0.620948128,
+    "completion_tokens_details": {
+      "reasoning_tokens": 154
+    },
+    "prompt_time": 0.02828533,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "queue_time": 0.155919764,
+    "total_time": 0.649233458
+  },
+  "model": "openai/gpt-oss-120b",
+  "created": 1795582732,
+  "params": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You write the first-read summary of a company for an analyst who vets companies before choosing them as suppliers or project partners. The analyst reads your summary to decide one thing: is this company worth a closer look, and what should they look at first? The full record is shown below your summary, so leave detail out.\n\nYou are given a FACT SHEET computed from the company's record (as of 31 Dec 2025). It is your only source.\n\nRULES\n1. Start with a verdict, using exactly one of these labels:\n   - Proceed: nothing found that should stop a normal vetting process.\n   - Review closely: gaps or weaknesses worth investigating before going ahead.\n   - Red flags: serious issues (winding-up status or petitions, going-concern or disclaimer audit opinions with other problems, negative equity, persistent and worsening losses) that may rule the company out.\n   - Insufficient information: no financial statements on record, so the company cannot be assessed. Use this whenever there are no financial statements, unless winding-up status or petitions also exist (then Red flags).\n2. \"Key risks\" lists ONLY items from the RED FLAGS section of the fact sheet, most serious first, at most 4 bullets (merge related items into one bullet). If RED FLAGS says \"None found.\", write exactly one bullet: \"No significant risks found in the record.\" Strong profits never outweigh legal or status risks: say both.\n3. Use only facts in the fact sheet. Copy numbers as written (e.g. RM 4.01m, RM 355.9k). Never state a figure that is not there.\n3b. Do not make claims about things the fact sheet does not cover: for example, shareholder holdings have no dates, so never say whether shareholders changed. Do not guess causes or outcomes. Only say \"all\", \"every\", \"never\", \"above\" or \"below\" when every figure in the fact sheet supports it.\n4. Litigation: the fact sheet groups cases as OPEN against the company, DECIDED against the company, CLOSED against the company (Settled, Withdrawn, Dismissed) and BROUGHT BY the company. Keep each case in its group and use the group's word: only OPEN cases are \"pending\"; DECIDED cases are \"judgment entered against the company\"; CLOSED cases are settled, withdrawn or dismissed. Cases BROUGHT BY the company are not a risk.\n5. Describe trends across the years available, not one year in isolation. If the net margin is under 3%, say so.\n6. Say how old the latest accounts are (the year-end date and months before the record date). Do not describe the company's current health from old accounts without saying so.\n7. Say what is missing: no accounts, missing years, unverified (disclaimed) years. Never fill a gap.\n8. Every item under OTHER POINTS TO NOTE must appear in \"Ownership & control\" (they are context, not red flags).\n9. Refer to people only by their role name as given (e.g. Director 1).\n10. No advice beyond the verdict: do not recommend approving, rejecting or lending.\n\nFORMAT (Markdown, at most 180 words; a company with no red flags should be under 120):\n\n**Verdict: <label>**: <one sentence: the main reason>\n\n**Key risks**\n- <bullets from RED FLAGS only, most serious first, at most 4>\n\n**Business:** <what it does>, incorporated <year>, status <status>.\n\n**Financials** (<years>; latest year ended <date>, <N> months before the record date): <at most 2 sentences: revenue and profit trend, cash flow or debt, audit opinions>\nIf there are no financial statements, write instead: **Financials:** No financial statements on record.\n\n**Ownership & control:** <largest shareholder and %, any company shareholder, every OTHER POINTS TO NOTE item>\n\n**Litigation:** <one sentence: counts by group; open and decided cases against the company with amounts; or \"No court cases on record.\">\n\nOutput only the summary."
+      },
+      {
+        "role": "user",
+        "content": "FACT SHEET\n\nRED FLAGS (most serious first):\n- No financial statements on record, so financial health cannot be assessed.\n\nOTHER POINTS TO NOTE (not red flags on their own):\n- 70.0% owned by a company, Gemilang Holdings Sdn. Bhd. (Malaysia); the parent's standing matters.\n\nPROFILE\n- Name: Pacific Seri Freight Sdn. Bhd. (SYN-001203)\n- Status: Active\n- Business: Cold chain transport and storage of frozen goods | Industry: Logistics | Registered state: Selangor\n- Incorporated: 2007-06-08 (18 years before the record date) | Share capital: RM 5.00m\n\nFINANCIALS\n- No financial statements on record. Do not state any financial figures.\n\nOWNERSHIP AND CONTROL\n- Shareholder: Gemilang Holdings Sdn. Bhd. (company, registered SYN-008766, incorporated in Malaysia) 70.0%\n- Shareholder: Director 2 (individual) 19.45%\n- Shareholder: Director 1 (individual) 10.55%\n- Director: Director 1, Managing Director, appointed 2010-12-12\n- Director: Director 2, Director, appointed 2018-06-21\n\nLITIGATION\n- 1 cases in total: 0 against the company (defendant), 1 brought by the company (plaintiff). Use the group names below exactly; do not move a case to another group.\n- OPEN against the company (status Pending): none\n- DECIDED against the company (status Judgment entered): none\n- CLOSED against the company: Settled: none\n- CLOSED against the company: Withdrawn: none\n- CLOSED against the company: Dismissed: none\n- BROUGHT BY the company (plaintiff, not a risk): 1\n  - 2023-09-24: Breach of contract, status Settled, claim RM 22.5k"
+      }
+    ],
+    "temperature": 0.2,
+    "max_tokens": 2000,
+    "reasoning_effort": "low",
+    "include_reasoning": false
+  }
+}

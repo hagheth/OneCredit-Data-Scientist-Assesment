@@ -1,0 +1,30 @@
+    rate limited, waiting 8s (attempt 1/8)
+[1/13] SYN-000029 3008 tokens 392 words
+    rate limited, waiting 20s (attempt 1/8)
+    rate limited, waiting 2s (attempt 2/8)
+[2/13] SYN-000067 2924 tokens 367 words
+    rate limited, waiting 17s (attempt 1/8)
+    rate limited, waiting 2s (attempt 2/8)
+[3/13] SYN-000217 3140 tokens 581 words
+    rate limited, waiting 24s (attempt 1/8)
+[4/13] SYN-000267 3413 tokens 446 words
+    rate limited, waiting 18s (attempt 1/8)
+    rate limited, waiting 2s (attempt 2/8)
+[5/13] SYN-000282 3020 tokens 469 words
+    rate limited, waiting 20s (attempt 1/8)
+[6/13] SYN-000286 2952 tokens 475 words
+    rate limited, waiting 7s (attempt 1/8)
+[7/13] SYN-000302 973 tokens 350 words
+    rate limited, waiting 22s (attempt 1/8)
+[8/13] SYN-000451 3278 tokens 451 words
+    rate limited, waiting 24s (attempt 1/8)
+[9/13] SYN-000545 3443 tokens 348 words
+    rate limited, waiting 7s (attempt 1/8)
+[10/13] SYN-001203 1069 tokens 320 words
+    rate limited, waiting 23s (attempt 1/8)
+[11/13] SYN-001212 3579 tokens 417 words
+    rate limited, waiting 25s (attempt 1/8)
+[12/13] SYN-001389 3714 tokens 453 words
+    rate limited, waiting 21s (attempt 1/8)
+[13/13] SYN-001569 3229 tokens 531 words
+Wrote summaries\v1_baseline.jsonl (13 summaries, 37742 new tokens)

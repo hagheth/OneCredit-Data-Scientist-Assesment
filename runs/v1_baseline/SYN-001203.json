@@ -1,0 +1,44 @@
+{
+  "registrationNumber": "SYN-001203",
+  "version": "v1_baseline",
+  "description": "Raw JSON record + one-line instruction",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write a short summary of this company for a team that vets companies before choosing them as suppliers or project partners. They will read it first to decide whether the company is worth a closer look. Use Markdown.\n\nCompany record (JSON):\n{\"registrationNumber\": \"SYN-001203\", \"profile\": {\"companyName\": \"Pacific Seri Freight Sdn. Bhd.\", \"status\": \"Active\", \"companyType\": \"Private limited company\", \"incorporationDate\": \"2007-06-08\", \"industry\": \"Logistics\", \"state\": \"Selangor\", \"natureOfBusiness\": \"Cold chain transport and storage of frozen goods\", \"shareCapital\": 5000000, \"formerNames\": []}, \"relationships\": {\"directors\": [{\"name\": \"Director 1\", \"designation\": \"Managing Director\", \"appointedOn\": \"2010-12-12\"}, {\"name\": \"Director 2\", \"designation\": \"Director\", \"appointedOn\": \"2018-06-21\"}], \"shareholders\": [{\"type\": \"company\", \"name\": \"Gemilang Holdings Sdn. Bhd.\", \"registrationNumber\": \"SYN-008766\", \"incorporatedIn\": \"Malaysia\", \"percentage\": 70.0}, {\"type\": \"individual\", \"name\": \"Director 2\", \"percentage\": 19.45}, {\"type\": \"individual\", \"name\": \"Director 1\", \"percentage\": 10.55}]}, \"financials\": {\"years\": []}, \"litigation\": {\"cases\": [{\"caseNumber\": \"CASE-2023-0273\", \"role\": \"plaintiff\", \"caseType\": \"Breach of contract\", \"court\": \"Magistrates' Court (Selangor)\", \"filedOn\": \"2023-09-24\", \"status\": \"Settled\", \"claimAmount\": 22500.0}]}}"
+    }
+  ],
+  "response": {
+    "content": "**Pacific Seri Freight Sdn. Bhd. – Quick Vetting Summary**\n\n| **Aspect** | **Key Points** |\n|------------|----------------|\n| **Company basics** | **Name:** Pacific Seri Freight Sdn. Bhd.<br>**Registration No.:** SYN‑001203<br>**Status:** Active<br>**Type:** Private limited company<br>**Incorporated:** 8 Jun 2007<br>**Location:** Selangor, Malaysia |\n| **Industry & focus** | **Sector:** Logistics<br>**Core business:** Cold‑chain transport & storage of frozen goods (temperature‑controlled freight). |\n| **Ownership & control** | **Major shareholder:** Gemilang Holdings Sdn. Bhd. (70 % – Malaysian‑registered)<br>**Individual shareholders:** <br>• Director 2 – 19.45 %<br>• Director 1 – 10.55 % |\n| **Leadership** | • **Managing Director:** Director 1 (appointed 12 Dec 2010) <br>• **Director:** Director 2 (appointed 21 Jun 2018) |\n| **Financial snapshot** | No financial statements provided in the record (empty “years” array). |\n| **Litigation history** | **One recent case** – *CASE‑2023‑0273* (Breach of contract, plaintiff, Magistrates’ Court Selangor). Filed 24 Sep 2023, **settled**; claim amount RM 22,500. No ongoing disputes. |\n| **Red flags / considerations** | • Lack of disclosed financial data – request audited statements, credit reports, or bank references.<br>• Single dominant shareholder (70 %) – assess any related‑party risk with Gemilang Holdings.<br>• Recent settled contract dispute – verify the nature of the breach and any systemic issues. |\n| **Why they might be a good fit** | • Specialized cold‑chain capability aligns with projects requiring frozen‑goods logistics.<br>• Long‑standing (since 2007) and active company with stable leadership.<br>• No current litigation; the only case was settled. |\n| **Next‑step checklist** | 1. Obtain latest audited financials & cash‑flow statements.<br>2. Conduct credit check on Gemilang Holdings and the two individual directors.<br>3. Request references from existing clients in the cold‑chain segment.<br>4. Verify insurance coverage and compliance with cold‑chain regulations (e.g., HACCP, ISO 22000). |\n\n**Bottom line:** Pacific Seri Freight appears to be an established, niche logistics provider with relevant expertise for temperature‑sensitive shipments. The lack of publicly available financials and the presence of a single dominant shareholder warrant deeper due‑diligence before moving forward.",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 601,
+      "prompt_tokens": 468,
+      "total_tokens": 1069,
+      "completion_time": 1.272306476,
+      "completion_tokens_details": {
+        "reasoning_tokens": 5
+      },
+      "prompt_time": 0.022890919,
+      "prompt_tokens_details": null,
+      "queue_time": 0.154757286,
+      "total_time": 1.295197395
+    },
+    "model": "openai/gpt-oss-120b",
+    "created": 1795576625,
+    "params": {
+      "model": "openai/gpt-oss-120b",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Write a short summary of this company for a team that vets companies before choosing them as suppliers or project partners. They will read it first to decide whether the company is worth a closer look. Use Markdown.\n\nCompany record (JSON):\n{\"registrationNumber\": \"SYN-001203\", \"profile\": {\"companyName\": \"Pacific Seri Freight Sdn. Bhd.\", \"status\": \"Active\", \"companyType\": \"Private limited company\", \"incorporationDate\": \"2007-06-08\", \"industry\": \"Logistics\", \"state\": \"Selangor\", \"natureOfBusiness\": \"Cold chain transport and storage of frozen goods\", \"shareCapital\": 5000000, \"formerNames\": []}, \"relationships\": {\"directors\": [{\"name\": \"Director 1\", \"designation\": \"Managing Director\", \"appointedOn\": \"2010-12-12\"}, {\"name\": \"Director 2\", \"designation\": \"Director\", \"appointedOn\": \"2018-06-21\"}], \"shareholders\": [{\"type\": \"company\", \"name\": \"Gemilang Holdings Sdn. Bhd.\", \"registrationNumber\": \"SYN-008766\", \"incorporatedIn\": \"Malaysia\", \"percentage\": 70.0}, {\"type\": \"individual\", \"name\": \"Director 2\", \"percentage\": 19.45}, {\"type\": \"individual\", \"name\": \"Director 1\", \"percentage\": 10.55}]}, \"financials\": {\"years\": []}, \"litigation\": {\"cases\": [{\"caseNumber\": \"CASE-2023-0273\", \"role\": \"plaintiff\", \"caseType\": \"Breach of contract\", \"court\": \"Magistrates' Court (Selangor)\", \"filedOn\": \"2023-09-24\", \"status\": \"Settled\", \"claimAmount\": 22500.0}]}}"
+        }
+      ],
+      "temperature": 0.2,
+      "max_tokens": 2000,
+      "reasoning_effort": "low",
+      "include_reasoning": false
+    },
+    "cached": false
+  }
+}

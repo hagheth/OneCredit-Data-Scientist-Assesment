@@ -1,0 +1,32 @@
+{
+  "content": "{\"ok\": true}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6,
+    "prompt_tokens": 19,
+    "total_tokens": 25,
+    "completion_time": 0.011628924,
+    "completion_tokens_details": null,
+    "prompt_time": 0.001014403,
+    "prompt_tokens_details": null,
+    "queue_time": 0.052501106,
+    "total_time": 0.012643327
+  },
+  "model": "qwen/qwen3.8-27b",
+  "created": 1795577420,
+  "params": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Return JSON {\"ok\": true}"
+      }
+    ],
+    "temperature": 0.2,
+    "max_tokens": 300,
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}
